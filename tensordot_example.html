@@ -1,0 +1,164 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"  
+"http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Gmail - Silly matriks-vraag</title>
+<style type="text/css">
+body, td{font-family:arial,sans-serif;font-size:13px} a:link, a:active {color:#1155CC; text-decoration:none} a:hover {text-decoration:underline; cursor: pointer} a:visited{color:##6611CC} img{border:0px} pre { white-space: pre; white-space: -moz-pre-wrap; white-space: -o-pre-wrap; white-space: pre-wrap; word-wrap: break-word; width: 800px; overflow: auto;}
+</style>
+<script>
+function Print(){document.body.offsetHeight;window.print()};
+</script>
+</head>
+<body onload="Print()">
+<div class="bodycontainer">
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr height=14px>
+<td align=right>
+<font size=-1 color=#777><b>
+Stéfan van der Walt
+&lt;sjvdwalt@gmail.com&gt;
+</b></font></td>
+</tr>
+</table>
+<div class="maincontent">
+<table width=100% cellpadding=0 cellspacing=0 border=0>
+<tr>
+<td width=40 valign="top">
+<img src="https://ssl.gstatic.com/images/icons/product/googlemail-32.png" 
+alt="Gmail Logo" />
+</td>
+<td>
+<font size=+1>
+<b>Silly matriks-vraag</b></font><br>
+<font size=-1 color=#777>2 messages</font>
+</td>
+</tr>
+</table>
+<hr>
+<table width=100% cellpadding=0 cellspacing=0 border=0 class="message">
+<tr>
+<td>
+<font size=-1><b>
+G-J van Rooyen
+</b>
+&lt;gvrooyen@sun.ac.za&gt;
+</font>
+</td>
+<td align=right>
+<font size=-1>
+Mon, Mar 19, 2012 at 11:31 PM
+</font>
+<tr>
+<td colspan=2>
+<font size=-1 class="recipient">
+<div>
+To:
+sjvdwalt@gmail.com
+</div>
+</font>
+<tr>
+<td colspan=2>
+<table width=100% cellpadding=12 cellspacing=0 border=0>
+<tr>
+<td>
+<font size=-1>Hallo Stéfan<br>
+<br>
+Mag ek jou brein pick? Hierdie behoort so eenvoudig te wees, maar iewers mis ek &#39;n trick.<br>
+<br>
+Ek wil &#39;n eenvoudige sommering oor matriksvermeningvuldigings uitwerk:<br>
+<br>
+LaTeX: sum_i X_i Y_i<br>
+<br>
+waar X_i &#39;n MxM matriks is, en Y_i &#39;n Mx1 vektor. Die resultaat is die gesommeerde Mx1 vektor.<br>
+<br>
+bv. as ek die volgende in numpy definieer:<br>
+<br>
+X = array([matrix(&#39;[1 1; 1 1]&#39;), matrix(&#39;[2 2; 2 2]&#39;)])<br>
+Y = array([matrix(&#39;[1; 1]&#39;), matrix(&#39;[2; 2]&#39;)])<br>
+<br>
+Wil ek elementsgewys die twee arrays vermenigvuldig, en matriksvermeningvuldiging op elke element doen. Die resultaat behoort [10; 10] te wees.<br>
+<br>
+Is daar &#39;n mooi manier om dit sonder &#39;n lus of &#39;n list comprehension te doen? Dit lyk na &#39;n tensorproduk, maar ook nie heeltemal nie.<br>
+<br>
+Is ek dom?<font color=#888888><br>
+<br>
+G-J<br>
+<br>
+<br>
+-- <br>
+Dr G-J van Rooyen<br>
+E315, Dept. E&amp;E Engineering<br>
+Stellenbosch University<br>
+<a href="tel:%2B27-21-8083805" value="+27218083805" target="_blank">+27-21-8083805</a><br>
+</font></font>
+</table>
+</table>
+<hr>
+<table width=100% cellpadding=0 cellspacing=0 border=0 class="message">
+<tr>
+<td>
+<font size=-1><b>
+Stéfan van der Walt
+</b>
+&lt;stefan@sun.ac.za&gt;
+</font>
+</td>
+<td align=right>
+<font size=-1>
+Tue, Mar 20, 2012 at 3:19 PM
+</font>
+<tr>
+<td colspan=2>
+<font size=-1 class="recipient">
+<div>
+To:
+G-J van Rooyen &lt;gvrooyen@sun.ac.za&gt;
+</div>
+</font>
+<tr>
+<td colspan=2>
+<table width=100% cellpadding=12 cellspacing=0 border=0>
+<tr>
+<td>
+<font size=-1>Haai Gert-Jan<br />
+<font color=#550055><br />
+On Mon, Mar 19, 2012 at 11:31 PM, G-J van Rooyen &lt;<a href="mailto:gvrooyen@sun.ac.za">gvrooyen@sun.ac.za</a>&gt; wrote:<br />
+&gt; Mag ek jou brein pick? Hierdie behoort so eenvoudig te wees, maar iewers mis<br />
+&gt; ek 'n trick.<br />
+&gt;<br />
+&gt; Ek wil 'n eenvoudige sommering oor matriksvermeningvuldigings uitwerk:<br />
+<br />
+</font>Jy het darem nou vir my en Fernando lekker laat kopkrap. &nbsp;Die probleem<br />
+lyk bedrieglik maklik, maar ek dink dis 'n goeie voorbeeld vir my<br />
+volgende numpy-tutoriaal.<br />
+<font color=#550055><br />
+&gt; LaTeX: sum_i X_i Y_i<br />
+&gt;<br />
+&gt; waar X_i 'n MxM matriks is, en Y_i 'n Mx1 vektor. Die resultaat is die<br />
+&gt; gesommeerde Mx1 vektor.<br />
+<br />
+</font>Die magiese inkantasie is:<br />
+<br />
+np.tensordot(X, Y, axes=[[0, 2], [0, 1]])<br />
+<br />
+Dit werk want:<br />
+<br />
+X is (P, M, N)<br />
+Y is (P, N, 1)<br />
+<br />
+Dus sommeer ons oor gepaarde asse 0 en 0 (van X en Y onderskeidelik),<br />
+en 2 en 1, om oor te bly met 'n Mx1-vektor.<br />
+<br />
+Groete<br />
+<font color=#888888>Stéfan<br />
+</font></font>
+</table>
+</table>
+</div>
+</div>
+</body>
+</html>
