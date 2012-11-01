@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="744.09448819"
+   height="1052.3622047"
+   id="svg8444"
+   version="1.1"
+   inkscape:version="0.48.3.1 r9886"
+   sodipodi:docname="New document 44">
+  <defs
+     id="defs8446" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="381.57068"
+     inkscape:cy="520"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="723"
+     inkscape:window-x="0"
+     inkscape:window-y="24"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata8449">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="opacity:0.9;fill:none;stroke:#db4848;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8452"
+       width="637.40625"
+       height="83.842659"
+       x="54.548237"
+       y="614.96613"
+       ry="19.555214" />
+    <text
+       xml:space="preserve"
+       style="font-size:35px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       x="314.69199"
+       y="665.84747"
+       id="text8454"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8456"
+         x="314.69199"
+         y="665.84747">NumPy</tspan></text>
+    <rect
+       style="opacity:0.9;fill:none;stroke:#4864db;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8966"
+       width="145.46196"
+       height="59.599014"
+       x="57.142586"
+       y="534.06458"
+       ry="19.555214" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       x="83.842659"
+       y="574.56006"
+       id="text8968"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8970"
+         x="83.842659"
+         y="574.56006">Pandas</tspan></text>
+    <rect
+       ry="19.555214"
+       y="534.06458"
+       x="218.98622"
+       height="59.598999"
+       width="172.7361"
+       id="rect8972"
+       style="opacity:0.9;fill:none;stroke:#4864db;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text8974"
+       y="574.56006"
+       x="238.396"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       xml:space="preserve"><tspan
+         y="574.56006"
+         x="238.396"
+         id="tspan8976"
+         sodipodi:role="line">Matplotlib</tspan></text>
+    <g
+       id="g8990"
+       transform="translate(84.852814,17.172593)">
+      <rect
+         style="opacity:0.9;fill:none;stroke:#4864db;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+         id="rect8984"
+         width="285.87317"
+         height="59.598999"
+         x="318.67673"
+         y="514.87164"
+         ry="19.555214" />
+      <text
+         xml:space="preserve"
+         style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+         x="428.30469"
+         y="555.36713"
+         id="text8986"
+         sodipodi:linespacing="125%"><tspan
+           sodipodi:role="line"
+           id="tspan8988"
+           x="428.30469"
+           y="555.36713">SciPy</tspan></text>
+    </g>
+    <rect
+       style="opacity:0.9;fill:none;stroke:#21a335;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+       id="rect8995"
+       width="189.90871"
+       height="59.598969"
+       x="289.6969"
+       y="458.30313"
+       ry="19.555214" />
+    <text
+       xml:space="preserve"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       x="309.59155"
+       y="498.79861"
+       id="text8997"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan8999"
+         x="309.59155"
+         y="498.79861">scikit-image</tspan></text>
+    <rect
+       ry="19.555214"
+       y="458.30313"
+       x="489.70712"
+       height="59.598999"
+       width="172.7361"
+       id="rect9001"
+       style="opacity:0.9;fill:none;stroke:#21a335;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text9003"
+       y="498.79861"
+       x="509.11685"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       xml:space="preserve"><tspan
+         y="498.79861"
+         x="509.11685"
+         id="tspan9005"
+         sodipodi:role="line">scikit-learn</tspan></text>
+    <rect
+       ry="19.555214"
+       y="458.30313"
+       x="88.676544"
+       height="59.598969"
+       width="189.90871"
+       id="rect9007"
+       style="opacity:0.9;fill:none;stroke:#21a335;stroke-width:3;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text9009"
+       y="498.79861"
+       x="106.11508"
+       style="font-size:28px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;fill:#000000;fill-opacity:1;stroke:none;font-family:ubuntu;-inkscape-font-specification:ubuntu"
+       xml:space="preserve"><tspan
+         y="498.79861"
+         x="106.11508"
+         id="tspan9011"
+         sodipodi:role="line">statsmodels</tspan></text>
+  </g>
+</svg>
