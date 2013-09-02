@@ -1,0 +1,91 @@
+#include <Python.h>
+#include <numpy/ndarraytypes.h>
+#include <numpy/ufuncobject.h>
+#include <stdio.h>
+
+{{py:
+
+# *NOTE*: Order of this list is important.  First match (even with casting)
+#         will be used.
+ctypes = ('int8_t', 'int32_t', 'int64_t', 'float', 'double')
+dtypes = ('NPY_INT8', 'NPY_INT32', 'NPY_INT64', 'NPY_FLOAT', 'NPY_DOUBLE')
+
+nin = 1
+nout = 1
+N = len(ctypes)
+}}
+
+{{for type in ctypes}}
+static void square_{{type}}(char** args,
+                            npy_intp* dimensions, npy_intp* steps,
+                            void *NPY_UNUSED(data))
+{
+    npy_intp n = dimensions[0];
+
+    char *input = args[0];
+    char *output = args[1];
+
+    npy_intp in_step = steps[0];
+    npy_intp out_step = steps[1];
+
+    {{type}} tmp;
+    npy_intp i;
+
+    for (i = 0; i < n; i++) {
+        tmp = *( ({{type}} *)input );
+        tmp = tmp * tmp;
+
+        *(({{type}} *)output) = tmp;
+
+        input += in_step;
+        output += out_step;
+    }
+
+    /*    printf("-> Loop type: {{type}}\n"); */
+}
+{{endfor}}
+
+static PyUFuncGenericFunction funcs[] = {
+    {{ ', '.join('square_%s' % t for t in ctypes) }}
+};
+
+static void *data[] = { {{ ', '.join(['NULL'] * N) }} };
+static char types[] = {
+    {{ ', '.join(', '.join([d, d]) for d in dtypes) }}
+};
+
+
+/* -------------------------------------------------------------------------- */
+/* See http://docs.python.org/2.7/extending/index.html                        */
+/* -------------------------------------------------------------------------- */
+
+PyMODINIT_FUNC initmy_ufunc_types(void)
+{
+    PyObject *m, *ufunc, *d;
+
+    /* Start with no methods, will add after initializing the ufunc */
+    static PyMethodDef module_methods[] = {
+        {NULL, NULL, 0, NULL} /* Sentinel */
+    };
+
+    m = Py_InitModule("my_ufunc_types", module_methods);
+    if (m == NULL) return;
+
+    /* Initialize numpy structures */
+    import_array();
+    import_umath();
+
+    ufunc = PyUFunc_FromFuncAndData(funcs, data, types,
+                                    {{ N }}, /* nr of data types */
+                                    {{ nin }}, {{ nout }}, /* nr in & out */
+                                    PyUFunc_None, /* identity */
+                                    "square", /* function name */
+                                    "docstring", /* docstring */
+                                    0); /* unused */
+
+    /* Add ufunc to module */
+    d = PyModule_GetDict(m);
+
+    PyDict_SetItemString(d, "square", ufunc);
+    Py_DECREF(ufunc);
+}

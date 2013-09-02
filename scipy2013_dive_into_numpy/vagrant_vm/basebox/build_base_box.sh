@@ -1,0 +1,4 @@
+	- install xubuntu manually
+	- update, remove a few unused stuff
+	- shut down the VM and then use vagrant package ...
+	- run post install script
