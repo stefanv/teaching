@@ -1,6 +1,12 @@
 @import url(http://fonts.googleapis.com/css?family=Droid+Serif);
 @import url(http://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 
+.title {
+  background-attachment: fixed !important;
+  background-position: left !important;
+  text-align: right !important;
+  background-color: black !important;
+}
 body {
   font-family: 'Droid Serif';
   font-size: 20px;
