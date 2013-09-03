@@ -6,7 +6,7 @@
 \begin_preamble
 \usepackage{listings}
 \pdsetup{%
-  lf=Kiel2012,
+  lf=Zurich 2012,
 %  rf=NumPy: Kittens \& Dragons,
   logohook=t,
   palette=green,
@@ -125,7 +125,7 @@ Cython
 
 
 \size normal
-Advanced Python Summer School, Kiel
+Advanced Python Summer School, Zurich
 \begin_inset Newline newline
 \end_inset
 
@@ -153,7 +153,7 @@ Stéfan van der Walt
 \end_layout
 
 \begin_layout Date
-September 2012
+September 2013
 \end_layout
 
 \begin_layout Standard
@@ -845,7 +845,9 @@ colorbox{pink}{double dx = (b - a) / N}`
 
         `
 \backslash
-colorbox{pink}{size
+colorbox{pink}{Py
+\backslash
+_ssize
 \backslash
 _t i}`
 \end_layout
@@ -1080,7 +1082,7 @@ def integrate_f(double a, double b, int N):
 
 \begin_layout Plain Layout
 
-        size_t i
+        Py_ssize_t i
 \end_layout
 
 \begin_layout Plain Layout
@@ -1216,7 +1218,7 @@ def integrate_f(Integrand integrand,
 
 \begin_layout Plain Layout
 
-    cdef ssize_t i
+    cdef Py_ssize_t i
 \end_layout
 
 \begin_layout Plain Layout
@@ -1689,7 +1691,9 @@ colorbox{pink}{cdef:}`
 
         `
 \backslash
-colorbox{pink}{size
+colorbox{pink}{Py
+\backslash
+_ssize
 \backslash
 _t rows
 \backslash
@@ -1706,7 +1710,9 @@ _B}`
 
         `
 \backslash
-colorbox{pink}{size
+colorbox{pink}{Py
+\backslash
+_ssize
 \backslash
 _t i, j, k}`
 \end_layout
@@ -1855,12 +1861,12 @@ def pdot(double[:, ::1] A,
 
 \begin_layout Plain Layout
 
-        size_t rows_A, cols_A, rows_B, cols_B
+        Py_ssize_t rows_A, cols_A, rows_B, cols_B
 \end_layout
 
 \begin_layout Plain Layout
 
-        size_t i, j, k
+        Py_ssize_t i, j, k
 \end_layout
 
 \begin_layout Plain Layout
