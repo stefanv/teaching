@@ -49,7 +49,9 @@ Write a Cython wrapper::
         return output_array
 
 for this function.  Note: whenever ``::1`` is specified for an axis, it means
-that that dimension should be contiguous in memory.
+that that dimension should be contiguous in memory.  Also, unless you call
+``np.asarray`` on your output, a MemoryView object instead of an array will be
+returned.
 
 You can find the pointer to an array with, e.g., ``&input_array[0, 0]``.  E.g.,
 this will yield the equivalent of ``double *``, ready for use in C.
@@ -76,7 +78,9 @@ behavior. It is defined on a grid of cells, where each cell has 8 neighbors::
 The update rule to get a new state from the old one is:
 
 - Cells with with fewer than 2 or more than 3 live neighbors die.
-- Cell with exactly 3 live neighbors becomes alive.
+- A live cell with two or three live neighbors lives on to the next
+  generation.
+- A dead cell with exactly 3 live neighbors becomes alive.
 
 Write a Cython function ``life_update(old_state, new_state)`` that
 takes an `N x N` Numpy array `old_state` of type ``int`` containing
@@ -96,7 +100,7 @@ the center of a big grid, and see what happens!
 
 - ... and others!
 
-These examples come from the very interesting Game of Life simulator
+These examples come from the Game of Life simulator
 `Golly <http://golly.sf.net/>`__.
 
 .. topic:: Animation in Matplotlib

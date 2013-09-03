@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="generator" content="Docutils 0.8.1: http://docutils.sourceforge.net/" />
+<meta name="generator" content="Docutils 0.10: http://docutils.sourceforge.net/" />
 <title>Problem-set: Kiel 2012</title>
 <style type="text/css">
 
@@ -380,7 +380,9 @@ def do_compute(double[::1] input_array):
     return output_array
 </pre>
 <p>for this function.  Note: whenever <tt class="docutils literal">::1</tt> is specified for an axis, it means
-that that dimension should be contiguous in memory.</p>
+that that dimension should be contiguous in memory.  Also, unless you call
+<tt class="docutils literal">np.asarray</tt> on your output, a MemoryView object instead of an array will be
+returned.</p>
 <p>You can find the pointer to an array with, e.g., <tt class="docutils literal">&amp;input_array[0, 0]</tt>.  E.g.,
 this will yield the equivalent of <tt class="docutils literal">double *</tt>, ready for use in C.</p>
 <p>The behaviour of the function can be verified with <tt class="docutils literal">run.py</tt>.</p>
@@ -402,7 +404,9 @@ behavior. It is defined on a grid of cells, where each cell has 8 neighbors:</p>
 <p>The update rule to get a new state from the old one is:</p>
 <ul class="simple">
 <li>Cells with with fewer than 2 or more than 3 live neighbors die.</li>
-<li>Cell with exactly 3 live neighbors becomes alive.</li>
+<li>A live cell with two or three live neighbors lives on to the next
+generation.</li>
+<li>A dead cell with exactly 3 live neighbors becomes alive.</li>
 </ul>
 <p>Write a Cython function <tt class="docutils literal">life_update(old_state, new_state)</tt> that
 takes an <cite>N x N</cite> Numpy array <cite>old_state</cite> of type <tt class="docutils literal">int</tt> containing
@@ -418,7 +422,7 @@ the center of a big grid, and see what happens!</p>
 <li><tt class="docutils literal">breeder.png</tt>: one sort of a breeder</li>
 <li>... and others!</li>
 </ul>
-<p>These examples come from the very interesting Game of Life simulator
+<p>These examples come from the Game of Life simulator
 <a class="reference external" href="http://golly.sf.net/">Golly</a>.</p>
 <div class="topic">
 <p class="topic-title first">Animation in Matplotlib</p>
