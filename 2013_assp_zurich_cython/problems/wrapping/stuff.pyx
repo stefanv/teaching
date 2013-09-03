@@ -1,8 +1,6 @@
 import numpy as np
 cimport numpy as np
 
-from cython cimport view
-
 cdef extern from "stuff.h":
     void compute(int n, double *input, double *output)
 

@@ -9,7 +9,7 @@ Contents
 
 - ``setup.py``: build script
 
-- ``run_life.py``: animation script (write this yourself!)
+- ``run_life.py``: animation script
 
 - ``run_life_gtk.py``: polished animation script
 
@@ -25,7 +25,7 @@ Contents
 
 - ``glider_stream.png``: An oscillator
 
-The example shapes are from the very interesting GOL simulator "Golly" [1].
+The example shapes are from the GOL simulator "Golly" [1].
 
 .. [1] http://golly.sourceforge.net/
 

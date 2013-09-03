@@ -244,8 +244,8 @@ dt = np.dtype([('time', np.uint64),
                              ('el', np.float32),
                              ('region_type', np.uint8),
                              ('region_ID', np.uint16)]),
-                             ('gain', np.uint8),
-                             ('samples', (np.int16, 2048))])
+               ('gain', np.uint8),
+               ('samples', (np.int16, 2048))])
 
 data = np.fromfile(f, dtype=dt)
 ```
@@ -296,7 +296,7 @@ In [3]: a + b
 Out[3]:
 array([[ 1,  2,  3,  4],
        [ 6,  7,  8,  9],
-              [11, 12, 13, 14]])
+       [11, 12, 13, 14]])
 
 ```
 
@@ -651,8 +651,8 @@ This is the substantitive part that picks out the window:
 Apply the broadcasting rules:
 
 ```
-(ni,  1, 1, 1              )  # idx_i
-(1,  nj, 1, 1              )  # idx_j
+(ni,  1, 1                 )  # idx_i
+(1,  nj, 1                 )  # idx_j
 (ni, nj, 2 * half_width + 1)  # idx_k
 ----------------------------
 (ni, nj, 7)  <-- this is what we wanted!
