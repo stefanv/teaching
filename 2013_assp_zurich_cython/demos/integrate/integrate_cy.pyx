@@ -9,7 +9,7 @@ def integrate_f(double a, double b, int N):
     cdef:
         double s = 0
         double dx = (b - a) / N
-        size_t i
+        Py_ssize_t i
 
     for i in range(N):
         s += f(a + i * dx)

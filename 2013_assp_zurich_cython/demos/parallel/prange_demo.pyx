@@ -13,8 +13,8 @@ def dot(double[:, ::1] A,
         double[:, ::1] out):
 
     cdef:
-        size_t rows_A, cols_A, rows_B, cols_B
-        size_t i, j, k
+        Py_ssize_t rows_A, cols_A, rows_B, cols_B
+        Py_ssize_t i, j, k
         double s
 
     rows_A, cols_A = A.shape[0], A.shape[1]
@@ -39,8 +39,8 @@ def pdot(double[:, ::1] A,
          double[:, ::1] out):
 
     cdef:
-        size_t rows_A, cols_A, rows_B, cols_B
-        size_t i, j, k
+        Py_ssize_t rows_A, cols_A, rows_B, cols_B
+        Py_ssize_t i, j, k
         double s
 
     rows_A, cols_A = A.shape[0], A.shape[1]

@@ -3,7 +3,7 @@ import numpy as np
 
 def foo(double[:, ::1] arr):
 
-    cdef size_t i, j
+    cdef Py_ssize_t i, j
     cdef double[:, ::1] out = np.zeros_like(arr)
 
     for i in range(arr.shape[0]):
