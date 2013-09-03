@@ -10,8 +10,8 @@ def expensive_square(x):
 def cheap_square(x):
     return x**2
 
-#square = expensive_square
-square = cheap_square
+square = expensive_square
+#square = cheap_square
 
 def execute():
     print "Squaring some numbers..."
