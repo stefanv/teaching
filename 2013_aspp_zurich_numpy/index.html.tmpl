@@ -30,6 +30,67 @@ background-image:url(images/numpy.png)
 
 .hard-right[[Download slides](https://github.com/stefanv/teaching/tree/master/2013_aspp_zurich_numpy)]
 
+---
+layout:false
+class:inverse
+
+.wide[![Overview](images/overview.png)]
+
+---
+## Num-what?
+
+This talk discusses some of the more advanced NumPy features. If you’ve
+never seen NumPy before, you may have more fun doing the tutorial at
+
+http://mentat.za.net/numpy/intro/intro.html
+
+or studying the course notes at
+
+http://scipy-lectures.github.com
+
+You can always catch up by reading:
+
+.tip[
+  **The NumPy array: a structure for efficient numerical computation**. Stéfan
+  van der Walt, S. Chris Colbert and Gaël Varoquaux. In IEEE Computing in
+  Science Engineering, March/April 2011.
+]
+
+---
+## Setup
+
+```
+import numpy as np  # We always use this convention,
+                    # also in the documentation
+
+print np.__version__    # version 1.7 or greater
+print np.show_config () # got ATLAS / Accelerate / MKL?
+```
+
+ATLAS is a fast implementation of BLAS (Basic Linear Algebra Routines).  On
+OSX you have Accelerate; students can get Intel's MKL for free. On Ubuntu,
+install ``libatlas3-base``.
+
+Make use of IPython's powerful features! TAB-completion, documentation, source
+inspection, timing, cpaste, etc.
+
+.tip[The accompanying problem sets are on the Wiki at
+     https://python.g-node.org/wiki/numpy ]
+
+---
+
+{{INCLUDE ndarray.md}}
+
+---
+
+name: inverse
+layout: true
+class: title, center, middle, inverse
+
+## Questions, discussion and exercizes
+
+---
+
 </textarea>
 
     <script src="http://gnab.github.com/remark/downloads/remark-0.5.4.min.js"

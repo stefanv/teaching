@@ -10,6 +10,7 @@
 body {
   font-family: 'Droid Serif';
   font-size: 20px;
+  line-height: 1.5;
 }
 h1, h2, h3 {
   font-family: 'Yanone Kaffeesatz';
@@ -57,6 +58,13 @@ code {
 .hard-right {
   position: absolute;
   right: 4em;
+}
+.wide img {
+  width: 82%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 #slideshow .slide .content code {
   font-size: 0.8em;
@@ -127,10 +135,11 @@ code {
 }
 .tip {
   padding: 5px;
-  background: #e7e8e2;
-  border-top: solid 1px;
-  border-bottom: solid 1px;
+  background: #e7e8f2;
+  border: none;
   font-size: 16px;
+  padding: 1em;
+  font-size: 100%;
 }
 
 .up10 {
@@ -145,6 +154,15 @@ code {
   position: relative;
   top: -30px;
 }
+.up40 {
+  position: relative;
+  top: -40px;
+}
+.up50 {
+  position: relative;
+  top: -50px;
+}
+
 .down10 {
   position: relative;
   top: 10px;
@@ -156,6 +174,10 @@ code {
 .down30 {
   position: relative;
   top: 30px;
+}
+.down40 {
+  position: relative;
+  top: 40px;
 }
 .down50{
   position: relative;
