@@ -1,0 +1,8 @@
+Run 'make test' to make sure everything is working as intended.
+
+For more information see:
+
+- http://cython.org/
+- http://docs.cython.org/
+- For NumPy specifics, see http://docs.cython.org/docs/numpy_tutorial.html
+

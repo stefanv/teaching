@@ -1,0 +1,20 @@
+- pyprof2calltree http://pypi.python.org/pypi/pyprof2calltree/
+- lineprofiler http://pypi.python.org/pypi/line_profiler/
+
+
+Graphical visualisation:
+
+$ easy_install RunSnakeRun
+$ python -m cProfile -o prof.data scriptname
+$ runsnake prof.data
+
+
+More detailed graphical visualisation (useful when developing extensions):
+
+$ valgrind --tool=callgrind -v --dump-instr=yes --trace-jump=yes
+  --callgrind-out-file=callgrind.log python benchmark.py
+$ kcachegrind callgrind.log
+
+
+Lineprofiler: see examples in this directory and read line_profiler docs to
+see how to enable it for IPython.
