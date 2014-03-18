@@ -1,0 +1,911 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.4: http://docutils.sourceforge.net/" />
+<title></title>
+<meta name="author" content="The NumPy Community" />
+<meta name="date" content="2008" />
+<style type="text/css">
+
+body {
+  background: #CCC;
+}
+
+.reference {
+  color: #024;
+  font-family: arial, sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.highlight {
+  background: #FFF;
+  margin: 1.675em;
+  border: solid 1px;
+  padding: 0 0 0 0.5em;
+  font-size: 110%;
+}
+
+dl.docutils dt {
+  font-weight: bold;
+}
+
+/*
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2005-12-18 01:56:14 +0100 (Sun, 18 Dec 2005) $
+:Revision: $Revision: 4224 $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none;
+  font-family: arial, sans-serif;
+  color: #024 }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: solid 1px; /*medium outset ;*/
+  background: #AFA;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin-left: 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left {
+  clear: left }
+
+img.align-right {
+  clear: right }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font-family: serif ;
+  font-size: 100% }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em ;
+  border: solid 1px;
+  padding: 1em 0 1em 0.5em;
+  background-color: #FFF;
+  font-size: 110%;
+}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre;
+ }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+tt.docutils {
+  color: #A0A;
+  font-size: 110%;
+}
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+<table class="docinfo" frame="void" rules="none">
+<col class="docinfo-name" />
+<col class="docinfo-content" />
+<tbody valign="top">
+<tr><th class="docinfo-name">Author:</th>
+<td>The NumPy Community</td></tr>
+<tr><th class="docinfo-name">Date:</th>
+<td>2008</td></tr>
+</tbody>
+</table>
+<!-- -*- rst -*- -->
+<div class="section">
+<h1><a id="numpy-lock-n-load" name="numpy-lock-n-load">NumPy: lock 'n load</a></h1>
+<div class="contents local topic">
+<ul class="simple">
+<li><a class="reference" href="#what-is-numpy" id="id5" name="id5">What is NumPy</a></li>
+<li><a class="reference" href="#first-things-first" id="id6" name="id6">First things first</a></li>
+<li><a class="reference" href="#how-to-get-help" id="id7" name="id7">How to get help</a><ul>
+<li><a class="reference" href="#tab-completion" id="id8" name="id8">Tab-completion</a></li>
+<li><a class="reference" href="#easily-read-docstrings-and-source" id="id9" name="id9">Easily read docstrings and source</a></li>
+</ul>
+</li>
+<li><a class="reference" href="#constructing-arrays" id="id10" name="id10">Constructing arrays</a></li>
+<li><a class="reference" href="#the-magic-behind-arrays" id="id11" name="id11">The magic behind arrays</a></li>
+<li><a class="reference" href="#finding-things-in-numpy" id="id12" name="id12">Finding things in NumPy</a></li>
+<li><a class="reference" href="#to-infinity-and-beyond" id="id13" name="id13">To infinity, and beyond!</a><ul>
+<li><a class="reference" href="#some-background-theory" id="id14" name="id14">Some background theory</a></li>
+<li><a class="reference" href="#constructing-a-grid" id="id15" name="id15">Constructing a grid</a></li>
+<li><a class="reference" href="#copies-and-views" id="id16" name="id16">Copies and views</a></li>
+<li><a class="reference" href="#making-room" id="id17" name="id17">Making room</a></li>
+<li><a class="reference" href="#the-misunderstood-for-loop" id="id18" name="id18">The misunderstood for-loop</a></li>
+<li><a class="reference" href="#generate-a-fractal" id="id19" name="id19">Generate a fractal</a></li>
+<li><a class="reference" href="#displaying-the-fractal" id="id20" name="id20">Displaying the fractal</a></li>
+<li><a class="reference" href="#spicing-it-up" id="id21" name="id21">Spicing it up</a></li>
+</ul>
+</li>
+<li><a class="reference" href="#where-to-learn-more" id="id22" name="id22">Where to learn more</a></li>
+<li><a class="reference" href="#footnotes" id="id23" name="id23">Footnotes</a></li>
+</ul>
+</div>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a tutorial-style introduction to NumPy.  In
+addition, a <a class="reference" href="http://docs.scipy.org/doc/">reference guide</a> is available, which
+details all the available modules, objects and functions.</p>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id5" id="what-is-numpy" name="what-is-numpy">What is NumPy</a></h2>
+<p>NumPy is a framework for manipulating collections of numbers.  In
+linear algebra, such collections are known as matrices, but in NumPy
+we call them <em>arrays</em>.  Arrays are collections of numbers of a certain
+<em>data-type</em>, such as integer or floating-point number<a class="footnote-reference" href="#id3" id="id1" name="id1"><sup>1</sup></a>.  An array
+also has an associated <em>shape</em> that tells us how the numbers are
+organised.  For example, the array containing</p>
+<div class="highlight"><pre>[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>]
+</pre></div>
+<p>has a shape of <tt class="docutils literal"><span class="pre">(4,)</span></tt>, whilst the matrix</p>
+<div class="highlight"><pre>[[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>],
+ [<span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>],
+ [<span style="color: #0000FF">5</span>, <span style="color: #0000FF">6</span>]]
+</pre></div>
+<p>has a shape of <tt class="docutils literal"><span class="pre">(3,</span> <span class="pre">2)</span></tt>.</p>
+<p>Examples of arrays include</p>
+<ol class="arabic simple">
+<li>Vectors (shape <tt class="docutils literal"><span class="pre">(N,)</span></tt> arrays) and matrices (shape <tt class="docutils literal"><span class="pre">(M,</span> <span class="pre">N)</span></tt>)
+arrays), from linear algebra.</li>
+<li>A photo, <tt class="docutils literal"><span class="pre">M</span></tt> pixels high and <tt class="docutils literal"><span class="pre">N</span></tt> wide (shape <tt class="docutils literal"><span class="pre">(M,</span> <span class="pre">N)</span></tt> array).
+If it is a colour photo, then each pixel has a green, red
+and blue value, so the shape is <tt class="docutils literal"><span class="pre">(M,</span> <span class="pre">N,</span> <span class="pre">3)</span></tt>.</li>
+<li>A table of temperature measurements, where each entry has a time-stamp
+(integer) and an associated temperature reading (floating point number)<a class="footnote-reference" href="#id4" id="id2" name="id2"><sup>2</sup></a>.</li>
+</ol>
+<p>NumPy also contains some essential array libraries, which</p>
+<ol class="arabic simple">
+<li>create and manipulate arrays,</li>
+<li>calculate the Fast Fourier Transform,</li>
+<li>generate random numbers and</li>
+<li>perform linear algebra.</li>
+</ol>
+<p>These libraries are extended in NumPy's sister-project, <a class="reference" href="http://www.scipy.org">SciPy</a>.</p>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id6" id="first-things-first" name="first-things-first">First things first</a></h2>
+<p>Before we start, let's make sure we have a working copy of NumPy
+installed.  Launch Python, and type</p>
+<div class="highlight"><pre>&gt;&gt;&gt; <span style="color: #000080; font-weight: bold">import</span> numpy <span style="color: #000080; font-weight: bold">as</span> np
+&gt;&gt;&gt; np.__version__
+<span style="color: #0000FF">&#39;1.2.0.dev5311&#39;</span>
+</pre></div>
+<p>As long as you have a version &gt;= 1.0.5, we're good to go.  For
+installation instructions, see the <a class="reference" href="http://www.scipy.org/Installation">NumPy homepage</a>.</p>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id7" id="how-to-get-help" name="how-to-get-help">How to get help</a></h2>
+<p>Throughout this tutorial, I shall make use of <a class="reference" href="http://ipython.scipy.org">IPython</a>, a fantastic Python shell that runs on
+all the major platforms.  If you don't have access to IPython, skip
+ahead to <a class="reference" href="#constructing-arrays">Constructing arrays</a>.</p>
+<div class="note">
+<p class="first admonition-title">Note</p>
+<p>Start IPython now.  You should see a prompt like this:</p>
+<div class="highlight"><pre>In [<span style="color: #0000FF">2</span>]:
+</pre></div>
+<p>Import NumPy:</p>
+<div class="last"><div class="highlight"><pre>In [<span style="color: #0000FF">2</span>]: <span style="color: #000080; font-weight: bold">import</span> numpy <span style="color: #000080; font-weight: bold">as</span> np
+</pre></div>
+</div></div>
+<p>IPython has many useful features, the most important of which are:</p>
+<div class="section">
+<h3><a class="toc-backref" href="#id8" id="tab-completion" name="tab-completion">Tab-completion</a></h3>
+<p>Type the following:</p>
+<div class="highlight"><pre>In [<span style="color: #0000FF">3</span>]: np.linalg.&lt;TAB&gt;
+</pre></div>
+<p>where <tt class="docutils literal"><span class="pre">&lt;TAB&gt;</span></tt> refers to the TAB-key.  You should see:</p>
+<div class="highlight"><pre>In [<span style="color: #0000FF">2</span>]: np.linalg.
+np.linalg.LinAlgError       np.linalg.cond
+np.linalg.Tester            np.linalg.det
+np.linalg.__builtins__      np.linalg.eig
+np.linalg.__class__         np.linalg.eigh
+np.linalg.__delattr__       np.linalg.eigvals
+np.linalg.__dict__          np.linalg.eigvalsh
+np.linalg.__doc__           np.linalg.info
+np.linalg.__file__          np.linalg.inv
+
+[...]
+</pre></div>
+<p>IPython examined the <tt class="docutils literal"><span class="pre">np.linalg</span></tt> module, and returned all the
+possible completions.  This is a great way to explore all the
+functions are available in NumPy.</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id9" id="easily-read-docstrings-and-source" name="easily-read-docstrings-and-source">Easily read docstrings and source</a></h3>
+<p>Once you see an interesting function, you'd like to know how to use it:</p>
+<div class="highlight"><pre>In[<span style="color: #0000FF">3</span>]: np.transpose<span style="color: #a61717; background-color: #e3d2d2">?</span>&lt;ENTER&gt;
+</pre></div>
+<p>IPython displays the documentation for <tt class="docutils literal"><span class="pre">transpose</span></tt>.  Also note that
+the function signature is given after <tt class="docutils literal"><span class="pre">Definition:</span></tt>.  In order to
+view the actual source code, use two question marks instead of one.</p>
+</div>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id10" id="constructing-arrays" name="constructing-arrays">Constructing arrays</a></h2>
+<p>When building a new array, we need to specify two attributes:</p>
+<ol class="arabic simple">
+<li>Data (to store in the array) and</li>
+<li>The type of the data (i.e., int, float, bool etc.)</li>
+</ol>
+<p>Let's create an array which holds the numbers 1 through 4:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; np.array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>], dtype=int)
+array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>])
+</pre></div>
+<p>If you don't provide the data type, NumPy will guess what it should
+be:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; x = np.array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>])
+
+&gt;&gt;&gt; x
+array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>])
+
+&gt;&gt;&gt; x.dtype
+dtype(<span style="color: #0000FF">&#39;int32&#39;</span>)
+</pre></div>
+<p>NumPy has many different numerical types, of which the most important are
+<tt class="docutils literal"><span class="pre">int</span></tt>, <tt class="docutils literal"><span class="pre">float</span></tt>, <tt class="docutils literal"><span class="pre">complex</span></tt>, <tt class="docutils literal"><span class="pre">bool</span></tt> and <tt class="docutils literal"><span class="pre">uint</span></tt> (unsigned integer).</p>
+<p>Now, let's manipulate the <em>shape</em> of the array, <tt class="docutils literal"><span class="pre">x</span></tt>, we just
+created:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; x = x.reshape([<span style="color: #0000FF">2</span>,<span style="color: #0000FF">2</span>])
+&gt;&gt;&gt; x
+array([[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>],
+       [<span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>]])
+</pre></div>
+<p>Sometimes, we like to create a <tt class="docutils literal"><span class="pre">2x2</span></tt> array from the outset:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; np.array([[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>], [<span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>]])
+array([[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>],
+       [<span style="color: #0000FF">3</span>, <span style="color: #0000FF">4</span>]])
+</pre></div>
+<p>There are various other methods for creating arrays.  A popular one is
+<tt class="docutils literal"><span class="pre">zeros</span></tt>, which creates a new array and fills it with (wait for it)
+zeros:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; x = np.zeros((<span style="color: #0000FF">3</span>,<span style="color: #0000FF">3</span>))
+&gt;&gt;&gt; x
+array([[ <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>],
+       [ <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>],
+       [ <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>,  <span style="color: #0000FF">0.</span>]])
+</pre></div>
+<p>The array we just created is of dtype <tt class="docutils literal"><span class="pre">float</span></tt>.  Maybe we'd prefer an
+integer array:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; x.astype(int)
+array([[<span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>],
+       [<span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>],
+       [<span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>]])
+</pre></div>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id11" id="the-magic-behind-arrays" name="the-magic-behind-arrays">The magic behind arrays</a></h2>
+<p>We've constructed arrays of specified shapes and types so far, but we
+could do that without NumPy too, using nested sequences.  The real
+power of NumPy comes into play when we start to manipulate array data.</p>
+<p>Probably the simplest example is adding two arrays together:</p>
+<table border="1" class="borderless docutils">
+<colgroup>
+<col width="77%" />
+<col width="23%" />
+</colgroup>
+<thead valign="bottom">
+<tr><th class="head">Python</th>
+<th class="head">NumPy</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr><td><tt class="docutils literal"><span class="pre">[x</span> <span class="pre">+</span> <span class="pre">y</span> <span class="pre">for</span> <span class="pre">x,</span> <span class="pre">y</span> <span class="pre">in</span> <span class="pre">zip(a,b)]</span></tt></td>
+<td><tt class="docutils literal"><span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span></tt></td>
+</tr>
+</tbody>
+</table>
+<p>NumPy knows how the elements line up, and add them accordingly.  The
+same goes for many other operations, e.g.,</p>
+<div class="highlight"><pre>&gt;&gt;&gt; np.mod([<span style="color: #0000FF">2</span>, <span style="color: #0000FF">4</span>, <span style="color: #0000FF">8</span>], [<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>])
+array([<span style="color: #0000FF">0</span>, <span style="color: #0000FF">0</span>, <span style="color: #0000FF">2</span>])
+</pre></div>
+<p>In this example, the result is</p>
+<div class="highlight"><pre>[mod(<span style="color: #0000FF">2</span>, <span style="color: #0000FF">1</span>), mod(<span style="color: #0000FF">4</span>, <span style="color: #0000FF">2</span>), mod(<span style="color: #0000FF">8</span>, <span style="color: #0000FF">3</span>)]
+</pre></div>
+<p>Note that many NumPy functions accept lists, tuples and other
+sequences in addition to arrays.  Internally, these sequences are
+converted to arrays before any processing takes place.  On the other
+hand, arrays also behave like sequences: you can slice them, calculate
+their lengths and so forth.</p>
+<p>Functions like <cite>numpy.mod</cite> that operate on individual elements are
+called <em>universal functions</em>.  Others include:</p>
+<pre class="literal-block">
+abs              arccos           arccosh
+arcsin           arcsinh          arctan
+arctan2          arctanh          bitwise_and
+bitwise_not      bitwise_or       bitwise_xor
+ceil             conj             conjugate
+cos              cosh             degrees
+equal            exp              expm1
+fabs             floor            floor_divide
+fmod             frexp            hypot
+invert           isfinite         isinf
+isnan            ldexp            left_shift
+log              log10            log1p
+maximum          minimum          mod
+modf             ones_like        power
+radians          right_shift      rint
+sign             signbit          sin
+sinh             sqrt             tan
+tanh             true_divide
+</pre>
+<p>Remember that you can use the question-mark in IPython to inspect the
+docstrings of any of these.  If you are running pure Python, use
+<tt class="docutils literal"><span class="pre">help</span></tt> instead.</p>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id12" id="finding-things-in-numpy" name="finding-things-in-numpy">Finding things in NumPy</a></h2>
+<p>There are so many functions in NumPy, that it may sometimes be
+difficult finding what you are looking for.  The <tt class="docutils literal"><span class="pre">lookfor</span></tt> function
+searches through the NumPy docstrings, and displays the first line of
+each docstring found:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; np.lookfor(<span style="color: #0000FF">&#39;integrate&#39;</span>)
+Search results <span style="color: #000080; font-weight: bold">for</span> <span style="color: #0000FF">&#39;integrate&#39;</span>
+------------------------------
+numpy.trapz
+    Integrate y(x) using samples along the given axis <span style="font-weight: bold">and</span> the composite
+</pre></div>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id13" id="to-infinity-and-beyond" name="to-infinity-and-beyond">To infinity, and beyond!</a></h2>
+<p>I'm sure Buzz Lightyear loves fractals; they just go on, and on, and
+on forever!  I've looked at these pretty pictures many times before,
+and often wondered how to render them.  Today, I tried, and was
+pleasantly surprised to discover that, using NumPy, you can do it
+using fewer than 20 lines of code!</p>
+<img alt="fractal_tricorn.png" src="fractal_tricorn.png" />
+<p>Of course, we'd like to display and save these images, and for that
+I'll use <a class="reference" href="http://matplotlib.sf.net">matplotlib</a>.  I you don't have
+matplotlib installed -- don't worry!  I'll also show you how to do it
+using the <a class="reference" href="http://www.pythonware.com/products/pil/">Python Imaging Library</a>,
+which comes standard with many distributions.</p>
+<div class="section">
+<h3><a class="toc-backref" href="#id14" id="some-background-theory" name="some-background-theory">Some background theory</a></h3>
+<img alt="mandelbrot_set.png" src="mandelbrot_set.png" />
+<p>We shall construct the Mandelbrot set, i.e. all the black points shown
+above.  The set is calculated as follows:</p>
+<p>Given a complex number <tt class="docutils literal"><span class="pre">z</span></tt>, make a copy of the number (call it
+<tt class="docutils literal"><span class="pre">c</span></tt>), and then perform the following operation recursively:</p>
+<div class="highlight"><pre>z = z**<span style="color: #0000FF">2</span> + c
+</pre></div>
+<p>If we repeat this an infinite number of times (not very practical!),
+the result will either blow up or shrink to nothing.  All the points
+whose magnitudes go to infinity are part of the Mandelbrot set.</p>
+<p>We clearly cannot compute an infinite number of iterations, so we make
+a compromise.  We say that any point <tt class="docutils literal"><span class="pre">z</span></tt> which, after 100
+iterations, has a magnitude of greater than 10, belongs to the
+Mandelbrot set.</p>
+<p>Good enough, let's go!</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id15" id="constructing-a-grid" name="constructing-a-grid">Constructing a grid</a></h3>
+<p>Without NumPy, it is easy enough to do the computation on one number.
+We'd like to do it on a <em>grid</em> of numbers, and that is where NumPy
+excels.  Let's now construct a grid of numbers on the complex plane.</p>
+<p>First, meet <tt class="docutils literal"><span class="pre">linspace</span></tt>:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; np.linspace(<span style="color: #0000FF">0</span>, <span style="color: #0000FF">1</span>, num=<span style="color: #0000FF">5</span>)
+array([ <span style="color: #0000FF">0.</span>  ,  <span style="color: #0000FF">0.25</span>,  <span style="color: #0000FF">0.5</span> ,  <span style="color: #0000FF">0.75</span>,  <span style="color: #0000FF">1.</span>  ])
+</pre></div>
+<p><tt class="docutils literal"><span class="pre">linspace</span></tt> generates <tt class="docutils literal"><span class="pre">num</span></tt> points between two given values.  We'd like
+to run our real numbers from, say, -2 to 1:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; re = np.linspace(-<span style="color: #0000FF">2</span>, <span style="color: #0000FF">1</span>, <span style="color: #0000FF">1000</span>)
+</pre></div>
+<p><tt class="docutils literal"><span class="pre">re</span></tt> now contains a thousand numbers between -2 and 1.  Similarly,
+we let <tt class="docutils literal"><span class="pre">y</span></tt> run from -1.5 to 1.5:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; im = np.linspace(-<span style="color: #0000FF">1.5</span>, <span style="color: #0000FF">1.5</span>, <span style="color: #0000FF">1000</span>)
+</pre></div>
+<p>The next weapon in our arsenal is <tt class="docutils literal"><span class="pre">meshgrid</span></tt>, which generates x and
+y grid positions:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; x, y = np.meshgrid([<span style="color: #0000FF">1</span>,<span style="color: #0000FF">2</span>,<span style="color: #0000FF">3</span>], [<span style="color: #0000FF">1</span>,<span style="color: #0000FF">2</span>])
+
+&gt;&gt;&gt; x
+array([[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>],
+       [<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>]])
+
+&gt;&gt;&gt; y
+array([[<span style="color: #0000FF">1</span>, <span style="color: #0000FF">1</span>, <span style="color: #0000FF">1</span>],
+       [<span style="color: #0000FF">2</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">2</span>]])
+</pre></div>
+<p>Note how <tt class="docutils literal"><span class="pre">x</span></tt> and <tt class="docutils literal"><span class="pre">y</span></tt> only vary in only one direction.  Let's build our coordinate positions:</p>
+<div class="highlight"><pre>x, y = np.meshgrid(re, im)
+</pre></div>
+<p>We are now able to construct the complex grid:</p>
+<div class="highlight"><pre>z = x + <span style="color: #0000FF">1</span>j*y
+</pre></div>
+<p>Note that, in Python, the complex number <tt class="docutils literal"><span class="pre">i</span></tt> is written <tt class="docutils literal"><span class="pre">1j</span></tt>.  Our
+grid should be a <tt class="docutils literal"><span class="pre">1000x1000</span></tt> array:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; z.shape
+(<span style="color: #0000FF">1000</span>, <span style="color: #0000FF">1000</span>)
+</pre></div>
+<p>The next step is to make a copy of <tt class="docutils literal"><span class="pre">z</span></tt>, which we assign to <tt class="docutils literal"><span class="pre">c</span></tt>:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; c = z.copy()
+</pre></div>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id16" id="copies-and-views" name="copies-and-views">Copies and views</a></h3>
+<p>Why couldn't we just do the following?</p>
+<div class="highlight"><pre>&gt;&gt;&gt; c = z
+</pre></div>
+<p>In Python, objects are always referred to by pointers.  <tt class="docutils literal"><span class="pre">c</span> <span class="pre">=</span> <span class="pre">z</span></tt>
+would simply have pointed <tt class="docutils literal"><span class="pre">c</span></tt> towards <tt class="docutils literal"><span class="pre">z</span></tt>, so we wouldn't have
+made a copy at all.  In scientific computation, we often work with
+large data-sets, and copies use a lot of memory.  Therefore, NumPy
+returns <em>views</em> (not copies) whenever possible:</p>
+<div class="highlight"><pre><span style="color: #008800; font-style: italic"># Create a new array</span>
+&gt;&gt;&gt; x = np.array([<span style="color: #0000FF">1</span>,<span style="color: #0000FF">2</span>,<span style="color: #0000FF">3</span>])
+
+<span style="color: #008800; font-style: italic"># View the first two elements and call it `y`</span>
+&gt;&gt;&gt; y = x[:<span style="color: #0000FF">2</span>]
+&gt;&gt;&gt; y
+array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>])
+
+<span style="color: #008800; font-style: italic"># Modify the first element of `y`</span>
+&gt;&gt;&gt; y[<span style="color: #0000FF">0</span>] = <span style="color: #0000FF">3</span>
+
+<span style="color: #008800; font-style: italic"># And note that `x` has also changed!</span>
+&gt;&gt;&gt; x
+array([<span style="color: #0000FF">3</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>])
+</pre></div>
+<p>So, if you want to make copies of arrays, use <tt class="docutils literal"><span class="pre">x.copy()</span></tt>!</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id17" id="making-room" name="making-room">Making room</a></h3>
+<p>We also need a storage container for our output.  Let's call it <tt class="docutils literal"><span class="pre">fractal</span></tt>:</p>
+<div class="highlight"><pre>fractal = np.zeros(z.shape, dtype=np.uint8)
+</pre></div>
+<p>We created an array of zeros of the same shape as our grid
+(<tt class="docutils literal"><span class="pre">1000x1000</span></tt>), and of type <tt class="docutils literal"><span class="pre">uint8</span></tt>, or unsigned integers of
+width 8.  The width refers to the number of bits used to represent
+this number in memory.  With 8 ones and zeros, we have integers from 0
+through 255, or <img alt="$2^8 - 1$" src="latex2png_bedbd055758c0cdeee3d16ff4abdbf767a6656341.png" />.</p>
+<p>There are many other methods for creating arrays; two of which are
+<tt class="docutils literal"><span class="pre">zeros_like</span></tt> and <tt class="docutils literal"><span class="pre">empty</span></tt>.  We could have used <tt class="docutils literal"><span class="pre">zeros_like</span></tt> above:</p>
+<div class="highlight"><pre>fractal = np.zeros_like(z).astype(np.uint8)
+</pre></div>
+<p>This is a little bit less efficient than using <tt class="docutils literal"><span class="pre">zeros</span></tt>, since we
+first allocate an array (of the right shape, but of floating point
+type) and then change its type to the required <tt class="docutils literal"><span class="pre">uint8</span></tt>, which
+necessitates a copy.</p>
+<p><tt class="docutils literal"><span class="pre">empty</span></tt> is used to create an array, but without initialising the
+values at all.  For example:</p>
+<pre class="doctest-block">
+&gt;&gt;&gt; np.empty((2, 2))
+array([[ -1.13561020e+002,   9.88131292e-324],
+       [  0.00000000e+000,   2.78134232e-309]])
+</pre>
+<p><tt class="docutils literal"><span class="pre">empty</span></tt> is blazingly fast, but unless you know for certain that you
+are going to initialise all of the array, it's safer to use <tt class="docutils literal"><span class="pre">zeros</span></tt>.</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id18" id="the-misunderstood-for-loop" name="the-misunderstood-for-loop">The misunderstood for-loop</a></h3>
+<p>Almost all newcomers to scientific computing in Python have been
+warned about the <em>for-loop</em>.  Yes, it is true: for-loops are slow in
+Python.  But (and this is a big but), often it does not matter.</p>
+<p>For example, if we wanted to square the elements of an array
+element-wise, the following would have been a very inefficient
+implementation:</p>
+<div class="highlight"><pre><span style="color: #000080; font-weight: bold">for</span> i <span style="font-weight: bold">in</span> range(<span style="color: #0000FF">1000</span>):
+   <span style="color: #000080; font-weight: bold">for</span> j <span style="font-weight: bold">in</span> range(<span style="color: #0000FF">1000</span>):
+       x[i, j] = x[i, j] ** <span style="color: #0000FF">2</span>
+</pre></div>
+<p>NumPy provides a simpler, faster alternative:</p>
+<div class="highlight"><pre>x = x**<span style="color: #0000FF">2</span> <span style="color: #008800; font-style: italic"># create a new array and fill it with x^2</span>
+</pre></div>
+<p>or even better:</p>
+<div class="highlight"><pre>x *= x <span style="color: #008800; font-style: italic"># multiply each element of x with itself, in-place</span>
+</pre></div>
+<p>On the other hand, say you had a hundred vectors, each as a row of
+array.  To calculate the length of each of the vectors, using a for-loop
+would be quite acceptable.  In this case, the loop executes rapidly (only
+100 iterations), and takes up much less time than the calculation
+itself.  Sometimes, using for-loops can even <em>save</em> time, because it
+allows you to work with smaller chunks of memory at a time (i.e., a
+row of the matrix, instead of the whole matrix):</p>
+<div class="highlight"><pre><span style="color: #008800; font-style: italic"># generate a random matrix M, containing a hundred row-vectors</span>
+M = np.random.random([<span style="color: #0000FF">100</span>, <span style="color: #0000FF">1000</span>])
+
+<span style="color: #008800; font-style: italic"># rows = 100, columns = 1000</span>
+rows, columns = M.shape
+
+<span style="color: #008800; font-style: italic"># make an array in which to store our output</span>
+norms = np.empty(rows)
+
+<span style="color: #000080; font-weight: bold">for</span> i <span style="font-weight: bold">in</span> range(rows):
+    norms[i] = np.sqrt(np.sum(M[i]**<span style="color: #0000FF">2</span>))
+</pre></div>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id19" id="generate-a-fractal" name="generate-a-fractal">Generate a fractal</a></h3>
+<p>Let's get back to work.  We need to repeat the operation <tt class="docutils literal"><span class="pre">z</span> <span class="pre">=</span> <span class="pre">z</span> <span class="pre">+</span> <span class="pre">c</span></tt> on our coordinates 100 times:</p>
+<div class="highlight"><pre><span style="color: #000080; font-weight: bold">for</span> n <span style="font-weight: bold">in</span> range(<span style="color: #0000FF">100</span>):
+    <span style="color: #000080; font-weight: bold">print</span> <span style="color: #0000FF">&quot;Iteration %d&quot;</span> % n
+    z *= z
+    z += c
+</pre></div>
+<p>Note that we make use of <em>in-place</em> operators above.  It is more
+efficient to do</p>
+<div class="highlight"><pre>x *= <span style="color: #0000FF">3</span>
+</pre></div>
+<p>than</p>
+<div class="highlight"><pre>x = x * <span style="color: #0000FF">3</span>
+</pre></div>
+<p>In the first case, <tt class="docutils literal"><span class="pre">x</span></tt> is simply replaced in memory by <tt class="docutils literal"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">3</span></tt>.
+In the second case,</p>
+<ul class="simple">
+<li>a temporary array is created,</li>
+<li><tt class="docutils literal"><span class="pre">x</span> <span class="pre">*</span> <span class="pre">3</span></tt> is calculated and stored in that array, and</li>
+<li><tt class="docutils literal"><span class="pre">x</span></tt> is modified to point to the temporary array.</li>
+</ul>
+<p>We said that we approximate the Mandelbrot set as all points that have
+a magnitude of greater than 10 after 100 iterations:</p>
+<div class="highlight"><pre>&gt;&gt;&gt; z[np.isnan(z)] = np.inf
+&gt;&gt;&gt; mask = (np.abs(z) &gt; <span style="color: #0000FF">100</span>)
+&gt;&gt;&gt; fractal[mask] = <span style="color: #0000FF">255</span>
+</pre></div>
+<p>The above code makes use of <em>boolean masks</em>.  These are arrays
+containing booleans (True or False values), and can be used to index
+arrays, e.g.</p>
+<div class="highlight"><pre>&gt;&gt;&gt; mask = np.array([True, False, True])
+&gt;&gt;&gt; arr = np.array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">2</span>, <span style="color: #0000FF">3</span>])
+&gt;&gt;&gt; arr[mask]
+array([<span style="color: #0000FF">1</span>, <span style="color: #0000FF">3</span>])
+</pre></div>
+<p>The first line in our code (<tt class="docutils literal"><span class="pre">z[np.isnan(z)]</span> <span class="pre">=</span> <span class="pre">np.inf</span></tt>) is a
+workaround: when squaring very large complex numbers, the result may
+be <tt class="docutils literal"><span class="pre">nan</span></tt> or <em>not-a-number</em>.  To work around this, we ask NumPy to
+replace all <tt class="docutils literal"><span class="pre">nan</span></tt> values in <tt class="docutils literal"><span class="pre">z</span></tt> with infinity.</p>
+<p>Then, we create a <tt class="docutils literal"><span class="pre">mask</span></tt> that indicates which points belong to the
+Mandelbrot set (points for which <tt class="docutils literal"><span class="pre">np.abs(z)</span></tt> is greater than 100).
+Finally, we set all the corresponding pixels in the output picture to
+255 (white).</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id20" id="displaying-the-fractal" name="displaying-the-fractal">Displaying the fractal</a></h3>
+<p>After all that hard work, we deserve some eye candy.</p>
+<dl class="docutils">
+<dt>Using matplotlib</dt>
+<dd><div class="first last"><div class="highlight"><pre>&gt;&gt;&gt; <span style="color: #000080; font-weight: bold">import</span> matplotlib.pyplot <span style="color: #000080; font-weight: bold">as</span> plt
+&gt;&gt;&gt; plt.imshow(fractal)
+&gt;&gt;&gt; plt.show()
+</pre></div>
+</div></dd>
+</dl>
+<p>Using PIL, the Python Imaging Library:</p>
+<blockquote>
+<pre class="doctest-block">
+&gt;&gt;&gt; import PIL.Image
+&gt;&gt;&gt; f = PIL.Image.fromarray(fractal)
+&gt;&gt;&gt; f.save('fractal.png')
+</pre>
+<p>Now, view the <tt class="docutils literal"><span class="pre">fractal.png</span></tt> with an image viewer, like your
+web browser.</p>
+</blockquote>
+<p>That's it!  We rendered the Mandelbrot set, using fewer than 20 lines
+of code!</p>
+</div>
+<div class="section">
+<h3><a class="toc-backref" href="#id21" id="spicing-it-up" name="spicing-it-up">Spicing it up</a></h3>
+<p>We can add some colour to the Mandelbrot set, by assigning a colour to
+each point, depending on how quickly it &quot;escapes&quot; towards infinity.
+Below is a full listing of the code above, modified to yield
+this beautiful result:</p>
+<img alt="mandelbrot_colour.png" src="mandelbrot_colour.png" />
+<div class="highlight"><pre><span style="color: #000080; font-weight: bold">import</span> numpy <span style="color: #000080; font-weight: bold">as</span> np
+<span style="color: #000080; font-weight: bold">import</span> matplotlib.pyplot <span style="color: #000080; font-weight: bold">as</span> plt
+
+ITERATIONS = <span style="color: #0000FF">100</span>
+DENSITY = <span style="color: #0000FF">1000</span> <span style="color: #008800; font-style: italic"># warning: execution speed decreases with square of DENSITY</span>
+
+x_min, x_max = -<span style="color: #0000FF">2</span>, <span style="color: #0000FF">1</span>
+y_min, y_max = -<span style="color: #0000FF">1.5</span>, <span style="color: #0000FF">1.5</span>
+
+x, y = np.meshgrid(np.linspace(x_min, x_max, DENSITY),
+                   np.linspace(y_min, y_max, DENSITY))
+
+c = x + <span style="color: #0000FF">1</span>j*y <span style="color: #008800; font-style: italic"># complex grid</span>
+z = c.copy()
+fractal = np.zeros(z.shape, dtype=np.uint8) + <span style="color: #0000FF">255</span>
+
+<span style="color: #000080; font-weight: bold">for</span> n <span style="font-weight: bold">in</span> range(ITERATIONS):
+    <span style="color: #000080; font-weight: bold">print</span> <span style="color: #0000FF">&quot;Iteration %d&quot;</span> % n
+
+    <span style="color: #008800; font-style: italic"># --- Uncomment to see different sets ---</span>
+
+    <span style="color: #008800; font-style: italic"># Tricorn</span>
+    <span style="color: #008800; font-style: italic"># z = z.conj()</span>
+
+    <span style="color: #008800; font-style: italic"># Burning ship</span>
+    <span style="color: #008800; font-style: italic"># z = abs(z.real) + 1j*abs(z.imag)</span>
+
+    <span style="color: #008800; font-style: italic"># ---</span>
+
+    <span style="color: #008800; font-style: italic"># Leave the lines below in place</span>
+    z *= z
+    z += c
+
+    mask = (fractal == <span style="color: #0000FF">255</span>) &amp; (abs(z) &gt; <span style="color: #0000FF">10</span>)
+    fractal[mask] = <span style="color: #0000FF">254</span> * n / float(ITERATIONS)
+
+plt.imshow(np.log(fractal), cmap=plt.cm.hot,
+           extent=(x_min, x_max, y_min, y_max))
+plt.title(<span style="color: #0000FF">&#39;Mandelbrot Set&#39;</span>)
+plt.xlabel(<span style="color: #0000FF">&#39;Re(z)&#39;</span>)
+plt.ylabel(<span style="color: #0000FF">&#39;Im(z)&#39;</span>)
+plt.show()
+</pre></div>
+</div>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id22" id="where-to-learn-more" name="where-to-learn-more">Where to learn more</a></h2>
+<ul class="simple">
+<li><a class="reference" href="http://www.scipy.org/Cookbook">The SciPy Cookbook</a></li>
+</ul>
+</div>
+<div class="section">
+<h2><a class="toc-backref" href="#id23" id="footnotes" name="footnotes">Footnotes</a></h2>
+<table class="docutils footnote" frame="void" id="id3" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1" name="id3">[1]</a></td><td>In fact, NumPy can handle homogeneous collections of <em>any</em>
+type, by setting the numeric type to <tt class="docutils literal"><span class="pre">object</span></tt>.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id4" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2" name="id4">[2]</a></td><td>This might strike you as odd: we said that arrays are
+homogeneous containers, with a <em>single</em> associated data-type.
+Fortunately, NumPy allows those data-types to be compositions
+of simpler types, e.g., <tt class="docutils literal"><span class="pre">(int,</span> <span class="pre">float)</span></tt>.  The array is still
+homogeneous, with <em>each entry</em> an integer-float pair.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</body>
+</html>
