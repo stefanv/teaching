@@ -1,0 +1,466 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/REC-html4/loose.dtd">
+
+<html lang="en">
+
+<head>
+
+<meta name="generator" content="AKFQuiz 4.3.1">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="Content-Language" content="en">
+<meta name="author" content="Stéfan van der Walt">
+<meta http-equiv="Content-Style-Type" content="text/css">
+<style type="text/css">
+<!-- @media print { .buttons, .defanswer, .resultlink, noscript {display:none} } -->
+</style>
+<link rel="stylesheet" type="text/css" href="q-blue.css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<script src="akfquiz5.js" type="text/javascript" language="JavaScript" charset="US-ASCII">
+</script>
+
+<title>NumPy Fortran-ordering Quiz</title>
+</head>
+
+
+<body>
+
+<h1>NumPy Fortran-ordering Quiz</h1>
+
+<dl id="metadata">
+<dt>Author: </dt> <dd>Stéfan van der Walt</dd>
+<dt>Author-link: </dt> <dd><a href="http://mentat.za.net" target="_blank">http://mentat.za.net</a></dd>
+</dl>
+
+<noscript><p class="error"><strong>
+JavaScript not available or deactivated<br>
+Quiz not usable!
+</strong></p></noscript>
+
+<form name="akfquiz" action="">
+
+<a name="top" id="top"></a>
+
+<div class="comment">
+<p>
+The scoring is simple: four options are given for each question.  For
+a wrong answer a point is deducted, for a correct answer a point
+is given and choosing 'don't know' does not influence your score.
+</p>
+
+<p>
+In this quiz, the question is always the same: "What would the output
+(e.g. at the Python prompt) be, given the following expression?"
+</p>
+
+<p>
+Of course, you are not allowed to use NumPy or python to obtain the
+answers.
+</p>
+
+<p>
+To get you started, here are the docstrings from numpy.array and
+numpy.reshape:
+</p>
+
+<p>
+<pre>
+Definition: array(object, dtype=None, copy=1,order=None, subok=0,ndmin=0)
+[...]
+order - Specify the order of the array.  If order is 'C', then the
+&nbsp;       array will be in C-contiguous order (last-index varies the
+&nbsp;       fastest). If order is 'FORTRAN', then the returned array will
+&nbsp;       be in Fortran-contiguous order (first-index varies the
+&nbsp;       fastest).  If order is None, then the returned array may be in
+&nbsp;       either C-, or Fortran-contiguous order or even discontiguous.
+<pre>
+<pre>
+Definition: N.reshape(a, newshape, order='C')
+Docstring: Change the shape of a to newshape.
+&nbsp;          Return a new view object if possible otherwise return a copy.
+</pre>
+</p>
+</div>
+
+
+<div class="question" id="question1">
+<p>
+array([1,2,3,4,5,6],order='F')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q1a1" name="q1" value="1" type="radio">
+<label for="q1a1">array([1, 2, 3, 4, 5, 6])</label>
+</div>
+
+<div>
+<input  id="q1a2" name="q1" value="-1" type="radio">
+<label for="q1a2">array([1, 3, 5, 2, 4, 6])</label>
+</div>
+
+<div>
+<input  id="q1a3" name="q1" value="-1" type="radio">
+<label for="q1a3">array([1, 4, 2, 5, 3, 6])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q1a4" name="q1" type="radio" value="0" checked>
+<label for="q1a4">don't know</label></div><br>
+<img name="q1" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question2">
+<p>
+array([[1,2,3],[4,5,6]],order='F')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q2a1" name="q2" value="1" type="radio">
+<label for="q2a1">array([[1, 2, 3], [4, 5, 6]])</label>
+</div>
+
+<div>
+<input  id="q2a2" name="q2" value="-1" type="radio">
+<label for="q2a2">array([[1, 3, 5], [2, 4, 6]])</label>
+</div>
+
+<div>
+<input  id="q2a3" name="q2" value="-1" type="radio">
+<label for="q2a3">array([[1, 4, 2], [5, 3, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q2a4" name="q2" type="radio" value="0" checked>
+<label for="q2a4">don't know</label></div><br>
+<img name="q2" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question3">
+<p>
+array([1,2,3,4,5,6],order='C').reshape((2,3),order='F')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q3a1" name="q3" value="-1" type="radio">
+<label for="q3a1">array([[1, 2, 3], [4, 5, 6]])</label>
+</div>
+
+<div>
+<input  id="q3a2" name="q3" value="1" type="radio">
+<label for="q3a2">array([[1, 3, 5], [2, 4, 6]])</label>
+</div>
+
+<div>
+<input  id="q3a3" name="q3" value="-1" type="radio">
+<label for="q3a3">array([[1, 4, 2], [5, 3, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q3a4" name="q3" type="radio" value="0" checked>
+<label for="q3a4">don't know</label></div><br>
+<img name="q3" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question4">
+<p>
+array([1,2,3,4,5,6],order='F').reshape((2,3),order='C')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q4a1" name="q4" value="1" type="radio">
+<label for="q4a1">array([[1, 2, 3], [4, 5, 6]])</label>
+</div>
+
+<div>
+<input  id="q4a2" name="q4" value="-1" type="radio">
+<label for="q4a2">array([[1, 3, 5], [2, 4, 6]])</label>
+</div>
+
+<div>
+<input  id="q4a3" name="q4" value="-1" type="radio">
+<label for="q4a3">array([[1, 4, 2], [5, 3, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q4a4" name="q4" type="radio" value="0" checked>
+<label for="q4a4">don't know</label></div><br>
+<img name="q4" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question5">
+<p>
+array([[1,2,3],[4,5,6]]).reshape((2,3),order='F')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q5a1" name="q5" value="1" type="radio">
+<label for="q5a1">array([[1, 2, 3], [4, 5, 6]])</label>
+</div>
+
+<div>
+<input  id="q5a2" name="q5" value="-1" type="radio">
+<label for="q5a2">array([[1, 3, 5], [2, 4, 6]])</label>
+</div>
+
+<div>
+<input  id="q5a3" name="q5" value="-1" type="radio">
+<label for="q5a3">array([[1, 4, 2], [5, 3, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q5a4" name="q5" type="radio" value="0" checked>
+<label for="q5a4">don't know</label></div><br>
+<img name="q5" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question6">
+<p>
+array([[1,2,3],[4,5,6]],order='F').reshape((2,3),order='C')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q6a1" name="q6" value="1" type="radio">
+<label for="q6a1">array([[1, 2, 3], [4, 5, 6]])</label>
+</div>
+
+<div>
+<input  id="q6a2" name="q6" value="-1" type="radio">
+<label for="q6a2">array([[1, 3, 5], [2, 4, 6]])</label>
+</div>
+
+<div>
+<input  id="q6a3" name="q6" value="-1" type="radio">
+<label for="q6a3">array([[1, 4, 2], [5, 3, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q6a4" name="q6" type="radio" value="0" checked>
+<label for="q6a4">don't know</label></div><br>
+<img name="q6" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question7">
+<p>
+array([[1,2,3],[4,5,6]]).reshape((3,2),order='F')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q7a1" name="q7" value="-1" type="radio">
+<label for="q7a1">array([[1, 2], [3, 4], [5, 6]])</label>
+</div>
+
+<div>
+<input  id="q7a2" name="q7" value="-1" type="radio">
+<label for="q7a2">array([[1, 4], [2, 5], [3, 6]])</label>
+</div>
+
+<div>
+<input  id="q7a3" name="q7" value="1" type="radio">
+<label for="q7a3">array([[1, 5], [4, 3], [2, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q7a4" name="q7" type="radio" value="0" checked>
+<label for="q7a4">don't know</label></div><br>
+<img name="q7" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<div class="question" id="question8">
+<p>
+array([[1,2,3],[4,5,6]],order='F').reshape((3,2),order='C')
+</p>
+</div>
+
+<div class="answer">
+<div>
+<input  id="q8a1" name="q8" value="1" type="radio">
+<label for="q8a1">array([[1, 2], [3, 4], [5, 6]])</label>
+</div>
+
+<div>
+<input  id="q8a2" name="q8" value="-1" type="radio">
+<label for="q8a2">array([[1, 4], [2, 5], [3, 6]])</label>
+</div>
+
+<div>
+<input  id="q8a3" name="q8" value="-1" type="radio">
+<label for="q8a3">array([[1, 5], [4, 3], [2, 6]])</label>
+</div>
+
+<div class="defanswer">
+<input  id="q8a4" name="q8" type="radio" value="0" checked>
+<label for="q8a4">don't know</label></div><br>
+<img name="q8" style="float:right; vertical-align:text-bottom;" width="18" height="18" alt="" src="leer.png">
+</div>
+
+
+<script type="text/javascript" charset="UTF-8">
+var asmntval = new Array();
+var asmnttxt = new Array();
+
+asmntval.push(100 );
+asmnttxt.push('You probably wrote the Fortran-ordering code!');
+
+asmntval.push( 70 );
+asmnttxt.push('Well done!  You have a better understanding of Fortran-ordering than most.');
+
+asmntval.push( 40 );
+asmnttxt.push('Not too bad, you seem to have a rough idea of how Fortran-ordering works.');
+
+asmntval.push( 25 );
+asmnttxt.push('Time to read the source, Luke.');
+
+asmntval.push(  0 );
+asmnttxt.push('Oh dear... rather stay with C-ordering for now.');
+</script>
+
+<div align="center" class="buttons">
+<input type="button" accesskey="r" value=" result " 
+ onClick="Result('You have gained ', ' of ', ' possible points.', 'That makes ', 'Sorry, that\'s not enough.', 'Hey, you have seen the solution already!', 8)">&nbsp;
+<input type="button" accesskey="s" value=" solution "
+ onClick="Solution('You really want to see the solution?')">&nbsp;
+<input type="reset" accesskey="n" value=" new " onClick="New()">
+</div>
+
+</form>
+
+<div align="right" dir="ltr" class="made"><small>
+made using <a href="http://akfoerster.de/akfquiz/" target="_blank">AKFQuiz</a>
+</small></div>
+
+</body>
+</html>
+
+<!-- Quiz:
+
+AKFQuiz 4.3.0 or higher
+
+title:       NumPy Fortran-ordering Quiz
+author:      Stéfan van der Walt
+#Copyright:   Andreas K. Foerster
+authorlink:  http://mentat.za.net
+#edited:
+#license:     GPL v2 or later
+#licenseLink: http://www.gnu.org/licenses/gpl.html
+charset:     UTF-8
+language:    en
+layout:      q-blue.css
+default:     don't know
+htmlcode:    true
+
+
+comment:
+The scoring is simple: four options are given for each question.  For
+a wrong answer a point is deducted, for a correct answer a point
+is given and choosing 'don't know' does not influence your score.
+.
+In this quiz, the question is always the same: "What would the output
+(e.g. at the Python prompt) be, given the following expression?"
+.
+Of course, you are not allowed to use NumPy or python to obtain the
+answers.
+.
+To get you started, here are the docstrings from numpy.array and
+numpy.reshape:
+.
+<pre>
+Definition: array(object, dtype=None, copy=1,order=None, subok=0,ndmin=0)
+[...]
+order - Specify the order of the array.  If order is 'C', then the
+&nbsp;       array will be in C-contiguous order (last-index varies the
+&nbsp;       fastest). If order is 'FORTRAN', then the returned array will
+&nbsp;       be in Fortran-contiguous order (first-index varies the
+&nbsp;       fastest).  If order is None, then the returned array may be in
+&nbsp;       either C-, or Fortran-contiguous order or even discontiguous.
+<pre>
+<pre>
+Definition: N.reshape(a, newshape, order='C')
+Docstring: Change the shape of a to newshape.
+&nbsp;          Return a new view object if possible otherwise return a copy.
+</pre>
+               
+question:
+array([1,2,3,4,5,6],order='F')
+
++1 array([1, 2, 3, 4, 5, 6])
+-1 array([1, 3, 5, 2, 4, 6])
+-1 array([1, 4, 2, 5, 3, 6])
+
+question:
+array([[1,2,3],[4,5,6]],order='F')
+
++1 array([[1, 2, 3], [4, 5, 6]])
+-1 array([[1, 3, 5], [2, 4, 6]])
+-1 array([[1, 4, 2], [5, 3, 6]])
+
+question:
+array([1,2,3,4,5,6],order='C').reshape((2,3),order='F')
+
+-1 array([[1, 2, 3], [4, 5, 6]])
++1 array([[1, 3, 5], [2, 4, 6]])
+-1 array([[1, 4, 2], [5, 3, 6]])
+
+question:
+array([1,2,3,4,5,6],order='F').reshape((2,3),order='C')
+
++1 array([[1, 2, 3], [4, 5, 6]])
+-1 array([[1, 3, 5], [2, 4, 6]])
+-1 array([[1, 4, 2], [5, 3, 6]])
+
+question:
+array([[1,2,3],[4,5,6]]).reshape((2,3),order='F')
+
++1 array([[1, 2, 3], [4, 5, 6]])
+-1 array([[1, 3, 5], [2, 4, 6]])
+-1 array([[1, 4, 2], [5, 3, 6]])
+
+question:
+array([[1,2,3],[4,5,6]],order='F').reshape((2,3),order='C')
+
++1 array([[1, 2, 3], [4, 5, 6]])
+-1 array([[1, 3, 5], [2, 4, 6]])
+-1 array([[1, 4, 2], [5, 3, 6]])
+
+question:
+array([[1,2,3],[4,5,6]]).reshape((3,2),order='F')
+
+-1 array([[1, 2], [3, 4], [5, 6]])
+-1 array([[1, 4], [2, 5], [3, 6]])
++1 array([[1, 5], [4, 3], [2, 6]])
+
+question:
+array([[1,2,3],[4,5,6]],order='F').reshape((3,2),order='C')
+
++1 array([[1, 2], [3, 4], [5, 6]])
+-1 array([[1, 4], [2, 5], [3, 6]])
+-1 array([[1, 5], [4, 3], [2, 6]])
+
+assessment%:
+100 You probably wrote the Fortran-ordering code!
+70  Well done!  You have a better understanding of Fortran-ordering than most.
+40  Not too bad, you seem to have a rough idea of how Fortran-ordering works.
+25  Time to read the source, Luke.
+0   Oh dear... rather stay with C-ordering for now.
+
+end
+-->
