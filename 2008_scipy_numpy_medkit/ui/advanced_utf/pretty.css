@@ -1,0 +1,162 @@
+/* Following are the presentation styles -- edit away! */
+
+/* Stefan's customisations */
+@import "../../pygments.css";
+
+div.sidebar {
+  margin-left: 1em;
+  border: medium outset;
+  padding: 1em;
+  background-color: #ffeeee;
+  width: 20%;
+  float: right;
+  clear: right;
+  font-size: medium;
+}
+
+.maroon {color: maroon;}
+.red {color: red;}
+.magenta {color: magenta;}
+.fuchsia {color: fuchsia;}
+.pink {color: #FAA;}
+.orange {color: orange;}
+.yellow {color: yellow;}
+.lime {color: lime;}
+.green {color: green;}
+.olive {color: olive;}
+.teal {color: teal;}
+.cyan {color: cyan;}
+.aqua {color: aqua;}
+.blue {color: blue;}
+.navy {color: navy;}
+.purple {color: purple;}
+.black {color: black;}
+.gray {color: gray;}
+.silver {color: silver;}
+.white {color: white;}
+
+.logo {margin: 0.2em 0 0 0.15em; padding: 0;
+       position: absolute; top: 2.6em; left: -0.2em; }
+
+#slide0 {padding-top: 1em; font-size: 90%;}
+body {background: #FFF url(backgrnd.png) fixed; color: #333; font-family: Tahoma, Arial, Helvetica, sans-serif; font-size: 2em;}
+.slide p {margin-top: 0em; margin-right: 0; }
+.slide h1 {position: absolute; top: 0em; left: 0em; z-index: 1; margin: 0; padding: 0.35em 0 0 50px; white-space: nowrap; font: bold 150%/1em Verdana, Arial, Helvetica, sans-serif; text-transform: capitalize; color: #DDD; background-color: transparent;}
+.highlight {
+  margin-top: -0.5em;
+  margin-bottom: 0.5em;
+  font-size: 0.8em;
+  border: solid 1px rgb(80,160,100);
+  background: url('../../graphics/transparent_back.png');
+}
+a:link, a:visited {text-decoration: none; color: #474;}
+
+.animation {padding: 0;
+            position: relative;
+}
+
+.animation .slide-display {
+    position: absolute;
+}
+
+.slide-display {display: inline ! important;}
+/* end Stefan customisations */
+
+.center {
+  text-align: center;
+}
+
+.slide pre.literal-block {
+  border: solid 1px;
+  margin-left: 0em;
+  padding: 0.5em;
+  background: url('../../graphics/transparent_back.png');
+}
+
+h1, h2, h3, h4 {font-size: 100%; margin: 0; padding: 0; font-weight: inherit;}
+h1 {text-shadow: 0.1em 0.1em 0.1em #333; background-color: transparent;}
+
+ul, pre {margin: 0; line-height: 1em; }
+html, body {margin: 0; padding: 0; height: 100%;}
+
+blockquote, q {font-style: italic;}
+blockquote {padding: 0 2em 0.5em; margin: 0 1.5em 0.5em; text-align: center; font-size: 1em;}
+blockquote p {margin: 0;}
+blockquote i {font-style: normal;}
+blockquote b {display: block; margin-top: 0.5em; font-weight: normal; font-size: smaller; font-style: normal;}
+blockquote b i {font-style: italic;}
+
+img {border: 0;}
+kbd {font-weight: bold; font-size: 1em;}
+sup {font-size: smaller; line-height: 1px;}
+
+.slide code.bad, code del {color: red;}
+.slide code.old {color: silver;}
+.slide pre {padding: 0; margin: 0.25em 0 0.5em 0.5em; color: #533; font-size: 90%;}
+.slide pre code {display: block;}
+.slide li {margin-top: 0.75em; margin-right: 0;}
+.slide ul ul {line-height: 1;}
+.slide ul ul li {margin: .2em; font-size: 85%; list-style: square;}
+.slide img.leader {display: block; margin: 0 auto;}
+
+div#header, div#footer {background: #fff; color: #AAA; font-family: Verdana, Arial, Helvetica, sans-serif;}
+div#header {background: transparent url(header.png) bottom; line-height: 1px;}
+div#footer {background: #999 url(footer.jpg) top; font-size: 0.5em; font-weight: bold; padding: 1em 0;}
+#footer h1, #footer h2 {border: none; display: block; padding: 0; position:absolute; bottom:0.5em;}
+#footer h1 {left:1em;}
+#footer h2 {right:1em; font-style: italic;}
+
+div.long {font-size: 0.75em;}
+.slide h3 {font-size: 130%;}
+h1 abbr {font-variant: small-caps;}
+
+div#controls {position: absolute; left: 25%; bottom: 0; width: 50%; text-align: center; font: bold 1em Verdana, Arial, Helvetica, sans-serif;}
+html>body div#controls {background: transparent; position: fixed; padding: 0; top: auto; text-align: center;}
+#controls #sheet {display: none;}
+#controls #controlForm {height: 3.0em; text-align: center; vertical-align: middle;}
+#controls #navLinks {padding: 0 0 0.2em 0; margin: 0; background: url(pattern.png) gray bottom repeat-x; border: 2px outset gray; border-top-color: silver; border-left-color: silver; text-align: center; vertical-align: middle; white-space: nowrap;}
+#controls #navLinks a {text-shadow: #444 0.1em 0.1em 0.1em; padding: 0; margin: 0em 0.36em; background: transparent; border: none; color: white; cursor: pointer;}
+#controls #navLinks a:focus, #controls #navLinks a:hover {text-decoration: none; color: black !important;}
+#controls #navLinks a:link, #controls #navLinks a:visited {text-decoration: none; color: white;}
+#controls #navLinks .subLinks {display: inline; border: 1px inset gray; border-bottom-color: silver; border-right-color: silver; font-size: 75%; padding: 0 0.25em; margin: -0.2em 0 0 0; background-color: #666; text-align: center; vertical-align: middle; white-space: nowrap;}
+#controls #navLinks .subLinks a {text-shadow: none; font-weight: normal; padding: 0; margin: 0; border: none; color: white; cursor: pointer;}
+
+#jumplist, #volumelist {padding: 0; margin: 0; width: 1.5em; height: 2.25em; cursor: pointer;}
+
+#currentSlide {white-space: nowrap; text-align: center; margin-bottom: -0.5em; font-size: 0.5em; background-color: transparent; color: #999;}
+
+#guru {position: absolute; visibility: visible; left: 0px; top: 0px; padding: 4px; width: 99%; height: auto; text-align: center; background-color: black; z-index: 10;}
+#guru div {border: solid 3px red; padding: 4px; font-family: monospace; font-size: 60%; width: auto; height: auto; color: red; text-align: center;}
+
+#slide0 h1 {position: static; margin: 1em 0 0; padding: 0; font: bold 3em Verdana, Arial, Helvetica, sans-serif; font-variant: small-caps; text-shadow: 0.1em 0.1em 0.1em #666;  white-space: normal; color: #222; background-color: transparent;}
+#slide0 h2 {font: bold italic 1em Arial, Helvetica, sans-serif; margin: 0.25em;}
+#slide0 h3 {margin-top: 1.5em; font-size: 1.5em;}
+#slide0 h4 {margin-top: 0; font-size: 1em;}
+
+ul.urls {list-style: none; display: inline; margin: 0;}
+.urls li {display: inline; margin: 0;}
+.note {display: none;}
+.external {border-bottom: 1px dotted gray;}
+html>body .external {border-bottom: none;}
+.external:after {content: " \274F"; font-size: smaller; color: #999;}
+
+.incremental, .incremental *, .incremental *:after {color: #ccc; visibility: visible;}
+img.incremental, canvas.incremental {visibility: hidden;}
+.incremental pre {visibility: hidden; }
+.slide .current {color: #B02;}
+
+/* diagnostics
+li:after {content: " [" attr(class) "]"; color: #F88;}
+*/
+
+table.piechart, table.barchart, table.linechart { border-spacing: 0.3em 0.15em;  }
+table.piechart tr th, table.barchart tr th, table.linechart tr th { white-space: nowrap; }
+table.piechart tr td, table.barchart tr td, table.linechart tr td { vertical-align: top; white-space: nowrap; }
+table.piechart tr td.col, table.barchart tr td.col, table.linechart tr td.col { border-bottom: 1px solid #555; border-right: 1px solid #555; }
+table.fs90 tr td, table.fs90 tr th, div.fs90, pre.fs90, p.fs90 ,ul.fs90 {font-size: 0.9em; }
+table.fs75 tr td, table.fs75 tr th, div.fs75, pre.fs75, p.fs75 ,ul.fs75 {font-size: 0.75em; }
+table.fs66 tr td, table.fs66 tr th, div.fs66, pre.fs66, p.fs66 ,ul.fs66 {font-size: 0.66em; }
+table.fs50 tr td, table.fs50 tr th, div.fs50, pre.fs50, p.fs50 ,ul.fs50 {font-size: 0.5em; }
+
+#soundmanager-debug {position:fixed; top:0px; right:0px; width:30em; height:20em; overflow:auto; border:1px solid red; padding:1em; margin:2em; font-family:"sans serif"; font-size: 12px;color: black; background-color:#f6f6f6; z-index: 100;}
+#soundmanager-debug code {font-size: 11px;}

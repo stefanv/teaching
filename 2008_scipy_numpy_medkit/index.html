@@ -1,0 +1,1101 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.4: http://docutils.sourceforge.net/" />
+<meta name="version" content="S5 1.1" />
+<title>NumPy MedKit</title>
+<meta content="true" name="tranSitions" />
+<meta content="200" name="fadeDuration" />
+<style type="text/css">
+
+/*
+:Author: David Goodger
+:Contact: goodger@users.sourceforge.net
+:Date: $Date: 2005-12-18 01:56:14 +0100 (Sun, 18 Dec 2005) $
+:Revision: $Revision: 4224 $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin-left: 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left {
+  clear: left }
+
+img.align-right {
+  clear: right }
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font-family: serif ;
+  font-size: 100% }
+
+pre.literal-block, pre.doctest-block {
+  margin-left: 2em ;
+  margin-right: 2em ;
+  background-color: #eeeeee }
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+tt.docutils {
+  background-color: #eeeeee }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<script src="ui/advanced_utf/slides.js" type="text/javascript"></script>
+<link rel="stylesheet" href="ui/advanced_utf/slides.css"
+      type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/advanced_utf/outline.css"
+      type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/advanced_utf/print.css"
+      type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/advanced_utf/opera.css"
+      type="text/css" media="projection" id="operaFix" />
+
+<style type="text/css">
+#currentSlide {display: none;}
+</style>
+</head>
+<body>
+<div class="layout">
+<div id="controls"></div>
+<div id="currentSlide"></div>
+<div id="header">
+<div id="header">
+<img alt="graphics/medkit_logo.png" class="scale logo" src="graphics/medkit_logo.png" />
+
+</div>
+
+</div>
+<div id="footer">
+<h1>NumPy MedKit</h1>
+<h2>SciPy Conference • 08-2008</h2>
+</div>
+</div>
+<div class="presentation">
+<div class="slide" id="slide0">
+<h1 class="title">NumPy MedKit</h1>
+<h2 class="subtitle" id="a-first-aid-kit-for-the-numerically-adventurous">A first-aid kit for the numerically adventurous</h2>
+<!-- -*- mode: rst -*- -->
+<!-- Definitions of interpreted text roles (classes) for S5/HTML data. -->
+<!-- This data file has been placed in the public domain. -->
+<!-- Colours
+======= -->
+<!-- Text Sizes
+========== -->
+<!-- Display in Slides (Presentation Mode) Only
+========================================== -->
+<!-- Display in Outline Mode Only
+============================ -->
+<!-- Display in Print Only
+===================== -->
+<!-- Incremental Display
+=================== -->
+<!-- Configuration, see http://www.netzgesta.de/S5/references.php -->
+<!-- Goed om oor te praat: -->
+<!-- - for loops (somtyds nie so bad nie) -->
+<div align="center" class="align-center"><img alt="graphics/medkit.png" class="scale align-center" src="graphics/medkit.png" style="width: 400px;" /></div>
+<p class="center">Stéfan van der Walt, University of Stellenbosch</p>
+<div class="notes container">
+<ul class="simple">
+<li>Introduce yourself<ul>
+<li>University of Stellenbosch, Department of Applied Mathematics</li>
+<li>Background is in engineering</li>
+<li>Developing NumPy is my PhD procrastination project</li>
+<li>Priviledged to be here with such talented people, many of whom
+could have been up here instead of me!, looking very much
+forward to the rest of this conference</li>
+</ul>
+</li>
+<li>Level of tutorial: &quot;advanced track&quot;, but rather intermediate track<ul>
+<li>Advanced topics may be of use to a select few, while I feel
+that these intermediate topics, while certainly not trivial,
+are common enough to warrant our attention.</li>
+</ul>
+</li>
+<li>Format of tutorial: challenge response</li>
+<li>Read title, describe context, proceed to next slide</li>
+</ul>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="k">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">([</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">])</span>
+</pre></div>
+</div>
+
+</div>
+<div class="slide" id="a-look-inside-our-medkit">
+<h1>A look inside our MedKit</h1>
+<div class="animation container">
+<!-- Use the empty element below to position the animation -->
+<img alt="graphics/empty.png" class="scale scale" src="graphics/empty.png" style="width: 130px;" />
+<!-- first slide here -->
+<img alt="graphics/medkit_unpack_00.png" class="hidden slide-display scale scale" src="graphics/medkit_unpack_00.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_01.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_01.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_02.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_02.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_03.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_03.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_04.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_04.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_05.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_05.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_06.png" class="incremental hidden slide-display scale scale" src="graphics/medkit_unpack_06.png" style="width: 600px;" />
+<img alt="graphics/medkit_unpack_07.png" class="incremental slide-display scale scale" src="graphics/medkit_unpack_07.png" style="width: 600px;" />
+</div>
+</div>
+<div class="slide" id="overview">
+<h1>Overview</h1>
+<div class="topic">
+<p class="topic-title first">Broadcasting</p>
+<ul class="simple">
+<li>It is fundamental to NumPy array handling</li>
+<li>Important, because it is so frequently used<ul>
+<li>... and abused!</li>
+</ul>
+</li>
+<li>Not a silver bullet to solve every problem (memory consumption)</li>
+<li>Dispell some common misconceptions surrounding for-loops
+(more on that later)</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id1">
+<h1>Overview</h1>
+<div class="topic">
+<p class="topic-title first">Structured arrays</p>
+<ul class="simple">
+<li>Common problem in industry: reading strange binary formats<ul>
+<li>NumPy makes it easy!</li>
+</ul>
+</li>
+<li>Also a very convenient way of organising data<ul>
+<li>Like columns in a spreadsheet</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id2">
+<h1>Overview</h1>
+<div class="topic">
+<p class="topic-title first">Views</p>
+<ul class="simple">
+<li>Often, we repeatedly operate on the same values<ul>
+<li>e.g. convolution, sliding window</li>
+<li>broadcasting</li>
+</ul>
+</li>
+<li>Views are a powerful way of reorganising data, <em>without</em>
+making copies<ul>
+<li>Especially useful for large data-sets</li>
+</ul>
+</li>
+<li>Recently, Robert Kern added <tt class="docutils literal"><span class="pre">stride_tricks</span></tt>, with
+<tt class="docutils literal"><span class="pre">broadcast_arrays</span></tt>, <tt class="docutils literal"><span class="pre">as_strided</span></tt>.</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id3">
+<h1>Overview</h1>
+<div class="topic">
+<p class="topic-title first">Sub-classing</p>
+<ul class="simple">
+<li>Before, sub-classing arrays used to be difficult and error-prone<ul>
+<li>NumPy makes it a lot easier</li>
+</ul>
+</li>
+<li>Especially useful for adding meta-data, to be carried along
+with operations<ul>
+<li>e.g. masked arrays, EXIF photographic tags, units, etc.</li>
+<li>Maybe a meta-data dictionary will be available in 2.0</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id4">
+<h1>Overview</h1>
+<p>(We'll skip this today)</p>
+<div class="topic">
+<p class="topic-title first">Optimisation tricks</p>
+<ul class="simple">
+<li>Talk about a few common pitfalls</li>
+<li>Improving memory usage using for-loops</li>
+<li>Profiling performance</li>
+<li>Cython, ctypes example</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="id5">
+<h1>Overview</h1>
+<div class="topic">
+<p class="topic-title first">Gems</p>
+<ul class="simple">
+<li>If there's time left, chat about some hidden beauties:<ul>
+<li><tt class="docutils literal"><span class="pre">np.save</span></tt> and <tt class="docutils literal"><span class="pre">np.load</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.fromregex</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.lib.Arrayterator</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.emath</span></tt> -- <tt class="docutils literal"><span class="pre">sqrt(-1)</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.unravel_index</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.lexsort</span></tt> and structured arrays</li>
+<li><tt class="docutils literal"><span class="pre">np.iinfo</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.issubdtype</span></tt></li>
+<li><tt class="docutils literal"><span class="pre">np.linalg.matrix_power</span></tt></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="slide" id="broadcasting">
+<h1>Broadcasting</h1>
+<ul class="simple">
+<li>Used to combine arrays of differing sizes</li>
+<li>Simplest example: scalar broadcasting</li>
+</ul>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">4</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="n">array</span><span class="p">([</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">3</span>
+<span class="n">array</span><span class="p">([</span><span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">6</span><span class="p">])</span>
+</pre></div>
+<div class="center container">
+<img alt="graphics/broadcast_scalar.png" class="scale" src="graphics/broadcast_scalar.png" />
+</div>
+</div>
+<div class="slide" id="broadcasting-in-2d">
+<h1>Broadcasting in 2D</h1>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mf">3</span><span class="p">,</span><span class="mf">4</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mf">3</span><span class="p">,</span><span class="mf">1</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">x</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">)</span>
+</pre></div>
+<div class="center container">
+<img alt="graphics/broadcast_2D.png" class="scale" src="graphics/broadcast_2D.png" />
+</div>
+</div>
+<div class="slide" id="id6">
+<h1>Broadcasting in 2D</h1>
+<p>Creating a grid of values:</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ogrid</span><span class="p">[</span><span class="mf">1</span><span class="p">:</span><span class="mf">10</span><span class="p">,</span> <span class="mf">1</span><span class="p">:</span><span class="mf">5</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">1</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">2</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">4</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">5</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">6</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">7</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">8</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">9</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">1</span><span class="n">j</span><span class="o">*</span><span class="n">y</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">1.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">1.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">1.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">1.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">2.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">2.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">2.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">2.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">3.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">3.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">3.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">3.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">4.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">4.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">4.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">4.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">5.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">5.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">5.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">5.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">6.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">6.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">6.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">6.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">7.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">7.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">7.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">7.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">8.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">8.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">8.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">8.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">9.</span><span class="o">+</span><span class="mf">1.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">9.</span><span class="o">+</span><span class="mf">2.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">9.</span><span class="o">+</span><span class="mf">3.</span><span class="n">j</span><span class="p">,</span>  <span class="mf">9.</span><span class="o">+</span><span class="mf">4.</span><span class="n">j</span><span class="p">]])</span>
+</pre></div>
+</div>
+<div class="slide" id="id7">
+<h1>Broadcasting in 2D</h1>
+<p>Timing two different approaches:</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">grid_old_way</span><span class="p">():</span>
+<span class="o">...</span>     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">mgrid</span><span class="p">[</span><span class="mf">1</span><span class="p">:</span><span class="mf">100</span><span class="p">,</span> <span class="mf">1</span><span class="p">:</span><span class="mf">100</span><span class="p">]</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">1</span><span class="n">j</span><span class="o">*</span><span class="n">y</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">def</span> <span class="nf">grid_new_way</span><span class="p">():</span>
+<span class="o">...</span>     <span class="n">x</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">ogrid</span><span class="p">[</span><span class="mf">1</span><span class="p">:</span><span class="mf">100</span><span class="p">,</span> <span class="mf">1</span><span class="p">:</span><span class="mf">100</span><span class="p">]</span>
+<span class="o">...</span>     <span class="k">return</span> <span class="n">x</span> <span class="o">+</span> <span class="mf">1</span><span class="n">j</span><span class="o">*</span><span class="n">y</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">timeit</span> <span class="n">grid_new_way</span><span class="p">()</span> 
+<span class="mf">1000</span> <span class="n">loops</span><span class="p">,</span> <span class="n">best</span> <span class="n">of</span> <span class="mf">3</span><span class="p">:</span> <span class="mf">301</span> <span class="err">µ</span><span class="n">s</span> <span class="n">per</span> <span class="n">loop</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">timeit</span> <span class="n">grid_old_way</span><span class="p">()</span> 
+<span class="mf">1000</span> <span class="n">loops</span><span class="p">,</span> <span class="n">best</span> <span class="n">of</span> <span class="mf">3</span><span class="p">:</span> <span class="mf">1.44</span> <span class="n">ms</span> <span class="n">per</span> <span class="n">loop</span>
+</pre></div>
+</div>
+<div class="slide" id="broadcasting-in-3d">
+<h1>Broadcasting in 3D</h1>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">((</span><span class="mf">3</span><span class="p">,</span> <span class="mf">5</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">zeros</span><span class="p">(</span><span class="mf">8</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">x</span><span class="p">[</span><span class="o">...</span><span class="p">,</span> <span class="bp">None</span><span class="p">]</span> <span class="o">+</span> <span class="n">y</span><span class="p">)</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">8</span><span class="p">)</span>
+</pre></div>
+<div class="center container">
+<img alt="graphics/array_3x5x8.png" class="scale" src="graphics/array_3x5x8.png" style="width: 500px;" />
+</div>
+</div>
+<div class="slide" id="broadcasting-in-n-d">
+<h1>Broadcasting in N-D</h1>
+<ul>
+<li><p class="first">Compare dimensions, starting from last</p>
+</li>
+<li><p class="first">Match when either dimension is one or None, or
+if dimensions are equal</p>
+<pre class="literal-block">
+Scalar    2D        3D            No go
+
+( ,)      (3, 4)    (3, 5, 1)     (3, 5, 2)
+(3,)      (3, 1)    (      8)     (      8)
+----      ------    ----------    ---------
+(3,)      (3, 4)    (3, 5, 8)        XXX
+</pre>
+</li>
+</ul>
+</div>
+<div class="slide" id="in-action-vector-quantisation">
+<h1>In action: vector quantisation</h1>
+<ul class="simple">
+<li>Code book: k M-dimensional data-points, as rows of <tt class="docutils literal"><span class="pre">(k,</span> <span class="pre">N)</span></tt> array</li>
+<li>Given another set of data points of shape <tt class="docutils literal"><span class="pre">(m,</span> <span class="pre">N)</span></tt>, for each find
+the closest point in the code book</li>
+</ul>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">book</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">1000</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span><span class="mf">10</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">match</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">100</span><span class="p">,</span> <span class="mf">110</span><span class="p">),</span>
+<span class="o">...</span>                   <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">155</span><span class="p">,</span> <span class="mf">165</span><span class="p">),</span>
+<span class="o">...</span>                   <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">173</span><span class="p">,</span> <span class="mf">183</span><span class="p">)])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">for</span> <span class="n">v</span> <span class="ow">in</span> <span class="n">match</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">min_dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">inf</span>
+<span class="o">...</span>     <span class="k">for</span> <span class="n">d</span> <span class="ow">in</span> <span class="n">book</span><span class="p">:</span>
+<span class="o">...</span>         <span class="n">dist</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">sum</span><span class="p">((</span><span class="n">v</span> <span class="o">-</span> <span class="n">d</span><span class="p">)</span><span class="o">**</span><span class="mf">2</span><span class="p">)</span>
+<span class="o">...</span>         <span class="k">if</span> <span class="n">dist</span> <span class="o">&lt;</span> <span class="n">min_dist</span><span class="p">:</span>
+<span class="o">...</span>             <span class="n">best_match</span> <span class="o">=</span> <span class="n">d</span>
+<span class="o">...</span>             <span class="n">min_dist</span> <span class="o">=</span> <span class="n">dist</span>
+<span class="o">...</span>     <span class="k">print</span> <span class="n">best_match</span><span class="p">,</span> <span class="n">min_dist</span>
+<span class="p">[</span><span class="mf">100</span> <span class="mf">101</span> <span class="mf">102</span> <span class="mf">103</span> <span class="mf">104</span> <span class="mf">105</span> <span class="mf">106</span> <span class="mf">107</span> <span class="mf">108</span> <span class="mf">109</span><span class="p">]</span> <span class="mf">0</span>
+<span class="p">[</span><span class="mf">150</span> <span class="mf">151</span> <span class="mf">152</span> <span class="mf">153</span> <span class="mf">154</span> <span class="mf">155</span> <span class="mf">156</span> <span class="mf">157</span> <span class="mf">158</span> <span class="mf">159</span><span class="p">]</span> <span class="mf">250</span>
+<span class="p">[</span><span class="mf">170</span> <span class="mf">171</span> <span class="mf">172</span> <span class="mf">173</span> <span class="mf">174</span> <span class="mf">175</span> <span class="mf">176</span> <span class="mf">177</span> <span class="mf">178</span> <span class="mf">179</span><span class="p">]</span> <span class="mf">90</span>
+</pre></div>
+</div>
+<div class="slide" id="solution-using-broadcasting">
+<h1>Solution using broadcasting</h1>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">distances</span> <span class="o">=</span> <span class="p">(</span><span class="n">book</span> <span class="o">-</span> <span class="n">match</span><span class="p">[:,</span> <span class="bp">None</span><span class="p">,</span> <span class="p">:])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">distances</span> <span class="o">*=</span> <span class="n">distances</span> <span class="c"># square in-place</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">distances</span> <span class="o">=</span> <span class="n">distances</span><span class="o">.</span><span class="n">sum</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mf">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">chosen</span> <span class="o">=</span> <span class="n">distances</span><span class="o">.</span><span class="n">argmin</span><span class="p">(</span><span class="n">axis</span><span class="o">=</span><span class="mf">1</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">book</span><span class="p">[</span><span class="n">chosen</span><span class="p">]</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">100</span><span class="p">,</span> <span class="mf">101</span><span class="p">,</span> <span class="mf">102</span><span class="p">,</span> <span class="mf">103</span><span class="p">,</span> <span class="mf">104</span><span class="p">,</span> <span class="mf">105</span><span class="p">,</span> <span class="mf">106</span><span class="p">,</span> <span class="mf">107</span><span class="p">,</span> <span class="mf">108</span><span class="p">,</span> <span class="mf">109</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">150</span><span class="p">,</span> <span class="mf">151</span><span class="p">,</span> <span class="mf">152</span><span class="p">,</span> <span class="mf">153</span><span class="p">,</span> <span class="mf">154</span><span class="p">,</span> <span class="mf">155</span><span class="p">,</span> <span class="mf">156</span><span class="p">,</span> <span class="mf">157</span><span class="p">,</span> <span class="mf">158</span><span class="p">,</span> <span class="mf">159</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">170</span><span class="p">,</span> <span class="mf">171</span><span class="p">,</span> <span class="mf">172</span><span class="p">,</span> <span class="mf">173</span><span class="p">,</span> <span class="mf">174</span><span class="p">,</span> <span class="mf">175</span><span class="p">,</span> <span class="mf">176</span><span class="p">,</span> <span class="mf">177</span><span class="p">,</span> <span class="mf">178</span><span class="p">,</span> <span class="mf">179</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">distances</span><span class="p">[</span><span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">match</span><span class="p">)),</span> <span class="n">chosen</span><span class="p">]</span>
+<span class="n">array</span><span class="p">([</span>  <span class="mf">0</span><span class="p">,</span> <span class="mf">250</span><span class="p">,</span>  <span class="mf">90</span><span class="p">])</span>
+</pre></div>
+<p>Not ideal -- the temporary array created has a large memory footprint:</p>
+<pre class="literal-block">
+(   100, 10)
+(3,   1, 10)
+------------
+(3, 100, 10)
+</pre>
+<p>Usually, the number of vectors compared would be much greater, which
+exacerbates the problem.</p>
+</div>
+<div class="slide" id="interlude-indexing">
+<h1>Interlude: Indexing</h1>
+<pre class="literal-block">
+Date: Wed, 16 Jul 2008 16:45:37 -0500
+From: &lt;Jack.Cook&#64;&gt;
+To: &lt;numpy-discussion&#64;scipy.org&gt;
+Subject: [Numpy-discussion] Numpy Advanced
+         Indexing Question
+
+Greetings,
+
+I have an I,J,K 3D volume of amplitude values
+at regularly sampled time intervals. I have an
+I,J 2D slice which contains a time (K) value at
+each I, J location. What I would like to do is
+extract a subvolume at a constant +/- K window
+around the slice. Is there an easy way to do
+this using advanced indexing or some other
+method?  Thanks in advanced for your help.
+
+- Jack
+</pre>
+</div>
+<div class="slide" id="indexing">
+<h1>Indexing</h1>
+<p>Robert Kern responds:</p>
+<pre class="literal-block">
+cube[:, :, K-half_width:K+half_width]
+</pre>
+<div class="incremental container">
+<p>But Jack's problem turned out to be a bit more tricky:</p>
+<pre class="literal-block">
+I can understand how this works if K is a constant
+time value but in my case K varies at each
+location in the two-dimensional slice. In other
+words, if I was doing this in a for loop I would
+do something like this
+
+for i in range(numI):
+  for j in range(numJ):
+     k = slice(i,j)
+     trace = cube(i,j,k-half_width:k+half_width)
+     # shove trace in sub volume
+</pre>
+</div>
+</div>
+<div class="slide" id="id8">
+<h1>Indexing</h1>
+<div class="center container">
+<img alt="graphics/array_colour_slices.png" class="scale" src="graphics/array_colour_slices.png" style="width: 680px;" />
+</div>
+</div>
+<div class="slide" id="id9">
+<h1>Indexing</h1>
+<p>First part of Robert's answer, shortened for tutorial purposes:</p>
+<pre class="literal-block">
+It would be great if you could just use slices
+for the first two axes:
+
+  cube[:, :, slice + numpy.arange(-half_width,
+                                   half_width)]
+
+
+but the semantics of that are a bit different
+for reasons I can explain later, if you want.
+</pre>
+<p>Why doesn't this work?</p>
+</div>
+<div class="slide" id="id10">
+<h1>Indexing</h1>
+<div class="sidebar">
+<p class="first sidebar-title">Diagonal</p>
+<table border="1" class="borderless last docutils">
+<colgroup>
+<col width="32%" />
+<col width="35%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr><td><span class="red">1</span></td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr><td>4</td>
+<td><span class="red">5</span></td>
+<td>6</td>
+</tr>
+<tr><td>7</td>
+<td>8</td>
+<td><span class="red">9</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+<ul class="simple">
+<li>There are two ways of indexing NumPy arrays, using<ul>
+<li>slices and scalars</li>
+<li>or ndarrays (known as <em>fancy indexing</em>)</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">9</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">((</span><span class="mf">3</span><span class="p">,</span><span class="mf">3</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">6</span><span class="p">,</span> <span class="mf">7</span><span class="p">,</span> <span class="mf">8</span><span class="p">]])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">[:,</span> <span class="p">[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">]]</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">3</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">6</span><span class="p">,</span> <span class="mf">7</span><span class="p">,</span> <span class="mf">8</span><span class="p">]])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([</span><span class="n">x</span><span class="p">[:,</span> <span class="mf">0</span><span class="p">],</span> <span class="n">x</span><span class="p">[:,</span> <span class="mf">1</span><span class="p">],</span> <span class="n">x</span><span class="p">[:,</span> <span class="mf">2</span><span class="p">]])</span>
+<span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">3</span><span class="p">,</span> <span class="mf">6</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">1</span><span class="p">,</span> <span class="mf">4</span><span class="p">,</span> <span class="mf">7</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">2</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">8</span><span class="p">]])</span>
+</pre></div>
+</div>
+<div class="slide" id="id11">
+<h1>Indexing</h1>
+<div class="sidebar">
+<p class="first sidebar-title">Safety First!</p>
+<img alt="graphics/afdbhead.jpg" class="scale last" src="graphics/afdbhead.jpg" style="width: 150px;" />
+</div>
+<p><strong>Prepare Your Foil Deflector Beanies</strong></p>
+<p>Two-step process to predict the outcome:</p>
+<ol class="arabic simple">
+<li>Broadcast all index arrays against one another</li>
+<li>Use the dimensions of the slices as-is</li>
+</ol>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mf">15</span><span class="p">,</span><span class="mf">12</span><span class="p">,</span><span class="mf">16</span><span class="p">,</span><span class="mf">3</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_one</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">],</span> <span class="p">[</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_one</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_two</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_two</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">)</span>
+</pre></div>
+<div class="highlight"><pre><span class="n">x</span><span class="p">[</span><span class="mf">5</span><span class="p">:</span><span class="mf">10</span><span class="p">,</span> <span class="n">index_one</span><span class="p">,</span> <span class="p">:,</span> <span class="n">index_two</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+</pre></div>
+</div>
+<div class="slide" id="id12">
+<h1>Indexing</h1>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">random</span><span class="p">((</span><span class="mf">15</span><span class="p">,</span><span class="mf">12</span><span class="p">,</span><span class="mf">16</span><span class="p">,</span><span class="mf">3</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_one</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">],</span> <span class="p">[</span><span class="mf">2</span><span class="p">,</span> <span class="mf">3</span><span class="p">],</span> <span class="p">[</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_one</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">2</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_two</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">([[</span><span class="mf">0</span><span class="p">,</span> <span class="mf">1</span><span class="p">]])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">index_two</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">1</span><span class="p">,</span> <span class="mf">2</span><span class="p">)</span>
+</pre></div>
+<p>Broadcast <span class="blue">index_one</span> and
+<span class="blue">index_two</span>:</p>
+<pre class="literal-block">
+(3, 2)  # shape of index_one
+(1, 2)  # shape of index_two
+------
+(3, 2)
+</pre>
+<p>Keeping this in mind, we may just be able to
+predict the following output:</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="p">[</span><span class="mf">5</span><span class="p">:</span><span class="mf">10</span><span class="p">,</span> <span class="n">index_one</span><span class="p">,</span> <span class="p">:,</span> <span class="n">index_two</span><span class="p">]</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">16</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="slide" id="indexing-solve-the-problem">
+<h1>Indexing: Solve the problem</h1>
+<p><strong>TIP:</strong> Use <tt class="docutils literal"><span class="pre">numpy.newaxis</span></tt> to change array
+dimensions to appease the Big Broadcaster.</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">ni</span><span class="p">,</span> <span class="n">nj</span><span class="p">,</span> <span class="n">nk</span> <span class="o">=</span> <span class="p">(</span><span class="mf">10</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="mf">20</span><span class="p">)</span>
+
+<span class="c"># Make a fake data cube such that cube[i,j,k] == k for all i,j,k.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cube</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">empty</span><span class="p">((</span><span class="n">ni</span><span class="p">,</span><span class="n">nj</span><span class="p">,</span><span class="n">nk</span><span class="p">),</span> <span class="n">dtype</span><span class="o">=</span><span class="nb">int</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">cube</span><span class="p">[:,:,:]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">nk</span><span class="p">)[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:]</span>
+
+<span class="c"># Pick out a random fake horizon in k.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">kslice</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randint</span><span class="p">(</span><span class="mf">5</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="n">size</span><span class="o">=</span><span class="p">(</span><span class="n">ni</span><span class="p">,</span> <span class="n">nj</span><span class="p">))</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">kslice</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">6</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">13</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">12</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">8</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">11</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">10</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">13</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">11</span><span class="p">]])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">half_width</span> <span class="o">=</span> <span class="mf">3</span>
+</pre></div>
+</div>
+<div class="slide" id="id13">
+<h1>Indexing</h1>
+<div class="highlight"><pre><span class="c"># These two replace the empty slices for the first two axes.</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">idx_i</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">ni</span><span class="p">)[:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">idx_j</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="n">nj</span><span class="p">)[</span><span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">,</span> <span class="p">:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span>
+
+<span class="c"># This is the substantive part that picks out the window</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">idx_k</span> <span class="o">=</span> <span class="n">kslice</span><span class="p">[:,</span> <span class="p">:,</span> <span class="n">np</span><span class="o">.</span><span class="n">newaxis</span><span class="p">]</span> <span class="o">+</span> \
+<span class="o">...</span>         <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="o">-</span><span class="n">half_width</span><span class="p">,</span> <span class="n">half_width</span><span class="o">+</span><span class="mf">1</span><span class="p">)</span> <span class="c"># (10, 15, 7)</span>
+</pre></div>
+<div class="highlight"><pre><span class="n">cube</span><span class="p">[</span><span class="n">idx_i</span><span class="p">,</span> <span class="n">idx_j</span><span class="p">,</span> <span class="n">idx_k</span><span class="p">]</span>
+</pre></div>
+<p>Apply the rule -- broadcast array indices, then
+add slices (but there are no slices in this case):</p>
+<pre class="literal-block">
+(ni,  1, 1                ) # idx_i
+(1 , nj, 1                ) # idx_j
+(ni, nj, 2*half_width + 1 ) # idx_k
+---------------------------
+(ni, nj, 7)
+</pre>
+<p>Phew, tough one.  Moving on to easier things...</p>
+</div>
+<div class="slide" id="id14">
+<h1>Indexing</h1>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">smallcube</span> <span class="o">=</span> <span class="n">cube</span><span class="p">[</span><span class="n">idx_i</span><span class="p">,</span><span class="n">idx_j</span><span class="p">,</span><span class="n">idx_k</span><span class="p">]</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">smallcube</span><span class="o">.</span><span class="n">shape</span>
+<span class="p">(</span><span class="mf">10</span><span class="p">,</span> <span class="mf">15</span><span class="p">,</span> <span class="mf">7</span><span class="p">)</span>
+
+<span class="c"># Now verify that our window is centered on kslice everywhere:</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">smallcube</span><span class="p">[:,:,</span><span class="mf">3</span><span class="p">]</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">6</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">13</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">12</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">5</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">8</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">11</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">11</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">10</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span>  <span class="mf">8</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span> <span class="mf">10</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">13</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">5</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">10</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">9</span><span class="p">,</span> <span class="mf">14</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">11</span><span class="p">]])</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="p">(</span><span class="n">smallcube</span><span class="p">[:,:,</span><span class="mf">3</span><span class="p">]</span> <span class="o">==</span> <span class="n">kslice</span><span class="p">)</span><span class="o">.</span><span class="n">all</span><span class="p">()</span>
+<span class="bp">True</span>
+</pre></div>
+</div>
+<div class="slide" id="structured-arrays">
+<h1>Structured Arrays</h1>
+<img alt="graphics/spreadsheet.png" class="scale" src="graphics/spreadsheet.png" style="width: 750px;" />
+</div>
+<div class="slide" id="id15">
+<h1>Structured Arrays</h1>
+<p>Reading this in most languages requires somewhat
+messy code.  Not <em>too</em> bad, but not very pretty either:</p>
+<div class="highlight"><pre><span class="k">while</span> <span class="p">((</span>count <span class="o">&gt;</span> 0<span class="p">)</span> <span class="o">&amp;&amp;</span> <span class="p">(</span>n <span class="o">&lt;</span><span class="p">=</span> NumPo<span class="nb">i</span>nts<span class="p">))</span>
+  <span class="c">% get time - I8 [ms]</span>
+  <span class="p">[</span>lw<span class="p">,</span> count<span class="p">]</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;uint32&#39;</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span>count <span class="o">&gt;</span> 0<span class="p">)</span> <span class="c">% then carry on</span>
+    uw <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;int32&#39;</span><span class="p">);</span>
+    t<span class="p">(</span>1<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> <span class="p">(</span>lw<span class="o">+</span>uw<span class="o">*</span>2^32<span class="p">)</span><span class="o">/</span>1000<span class="p">;</span>
+
+    <span class="c">% get number of bytes of data</span>
+    numbytes <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;uint32&#39;</span><span class="p">);</span>
+
+    <span class="c">% read sMEASUREMENTPOSITIONINFO (11 bytes)</span>
+    m<span class="p">(</span>1<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;float32&#39;</span><span class="p">);</span> <span class="c">% az [rad]</span>
+    m<span class="p">(</span>2<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;float32&#39;</span><span class="p">);</span> <span class="c">% el [rad]</span>
+    m<span class="p">(</span>3<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;uint8&#39;</span><span class="p">);</span>   <span class="c">% region type</span>
+    m<span class="p">(</span>4<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;uint16&#39;</span><span class="p">);</span>  <span class="c">% region ID</span>
+    g<span class="p">(</span>1<span class="p">,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> 1<span class="p">,</span> <span class="s">&#39;uint8&#39;</span><span class="p">);</span>
+
+    numsamples <span class="p">=</span> <span class="p">(</span>numbytes<span class="o">-</span>12<span class="p">)</span><span class="o">/</span>2<span class="p">;</span> <span class="c">% 2 byte integers</span>
+    a<span class="p">(:,</span>n<span class="p">)</span> <span class="p">=</span> fread<span class="p">(</span>f<span class="nb">i</span>d<span class="p">,</span> numsamples<span class="p">,</span> <span class="s">&#39;int16&#39;</span><span class="p">);</span>
+</pre></div>
+</div>
+<div class="slide" id="id16">
+<h1>Structured Arrays</h1>
+<p>The NumPy solution:</p>
+<div class="highlight"><pre><span class="n">dt</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">dtype</span><span class="p">([(</span><span class="s">&#39;time&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">uint64</span><span class="p">),</span>
+               <span class="p">(</span><span class="s">&#39;size&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">uint32</span><span class="p">),</span>
+               <span class="p">(</span><span class="s">&#39;position&#39;</span><span class="p">,</span> <span class="p">[(</span><span class="s">&#39;az&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
+                             <span class="p">(</span><span class="s">&#39;el&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">float32</span><span class="p">),</span>
+                             <span class="p">(</span><span class="s">&#39;region_type&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">),</span>
+                             <span class="p">(</span><span class="s">&#39;region_ID&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">uint16</span><span class="p">)]),</span>
+               <span class="p">(</span><span class="s">&#39;gain&#39;</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">uint8</span><span class="p">),</span>
+               <span class="p">(</span><span class="s">&#39;samples&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int16</span><span class="p">,</span><span class="mf">2048</span><span class="p">))])</span>
+
+<span class="n">data</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">fromfile</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dt</span><span class="p">)</span>
+</pre></div>
+<p>Access this data using dictionary-like syntax:</p>
+<div class="highlight"><pre><span class="n">data</span><span class="p">[</span><span class="s">&#39;position&#39;</span><span class="p">][</span><span class="s">&#39;az&#39;</span><span class="p">]</span>
+</pre></div>
+</div>
+<div class="slide" id="views-and-strided-tricks">
+<h1>Views and strided tricks</h1>
+<pre class="literal-block">
+Date: Wed, 16 Jul 2008 16:45:37 -0500
+From: Amir
+To: &lt;numpy-discussion&#64;scipy.org&gt;
+Subject: [Numpy-discussion] interleaved
+         indexing
+
+A very beginner question about indexing: let x be
+an array where n = len(x). I would like to create
+a view y of x such that:
+
+y[i] = x[i:i+m,...]  for each i and a fixed m &lt;&lt; n
+
+so I can do things like numpy.cov(y). With n
+large, allocating y is a problem for
+me. Currently, I either do for loops in cython or
+translate operations into correlate() but am
+hoping there is an easier way, maybe using fancy
+indexing or broadcasting. Memory usage is
+secondary to speed, though.
+</pre>
+</div>
+<div class="slide" id="id17">
+<h1>Views and strided tricks</h1>
+<p>Given input data:</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mf">20</span><span class="p">)</span><span class="o">.</span><span class="n">reshape</span><span class="p">([</span><span class="mf">4</span><span class="p">,</span> <span class="mf">5</span><span class="p">])</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">x</span>
+<span class="n">array</span><span class="p">([[</span> <span class="mf">0</span><span class="p">,</span>  <span class="mf">1</span><span class="p">,</span>  <span class="mf">2</span><span class="p">,</span>  <span class="mf">3</span><span class="p">,</span>  <span class="mf">4</span><span class="p">],</span>
+       <span class="p">[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+       <span class="p">[</span><span class="mf">15</span><span class="p">,</span> <span class="mf">16</span><span class="p">,</span> <span class="mf">17</span><span class="p">,</span> <span class="mf">18</span><span class="p">,</span> <span class="mf">19</span><span class="p">]])</span>
+</pre></div>
+<p>What he wants is a view like this (assume <tt class="docutils literal"><span class="pre">m</span> <span class="pre">==</span> <span class="pre">2</span></tt>):</p>
+<div class="highlight"><pre><span class="n">array</span><span class="p">([[[</span> <span class="mf">0</span><span class="p">,</span>  <span class="mf">1</span><span class="p">,</span>  <span class="mf">2</span><span class="p">,</span>  <span class="mf">3</span><span class="p">,</span>  <span class="mf">4</span><span class="p">],</span>
+        <span class="p">[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">]],</span>
+
+       <span class="p">[[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">]],</span>
+
+       <span class="p">[[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">15</span><span class="p">,</span> <span class="mf">16</span><span class="p">,</span> <span class="mf">17</span><span class="p">,</span> <span class="mf">18</span><span class="p">,</span> <span class="mf">19</span><span class="p">]]])</span>
+</pre></div>
+</div>
+<div class="slide" id="id18">
+<h1>Views and strided tricks</h1>
+<p>To do this, we need to know the following terms:</p>
+<dl class="docutils">
+<dt><strong>shape</strong></dt>
+<dd>The dimensions of the array along each axis.</dd>
+<dt><strong>strides</strong></dt>
+<dd>The number of bytes of memory that must be
+skipped to progress to the next item along a
+certain dimension.</dd>
+</dl>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">x</span><span class="o">.</span><span class="n">strides</span>
+<span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">4</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">int32</span><span class="p">()</span><span class="o">.</span><span class="n">itemsize</span>
+<span class="mf">4</span>
+</pre></div>
+</div>
+<div class="slide" id="id19">
+<h1>Views and strided tricks</h1>
+<div class="highlight"><pre><span class="n">array</span><span class="p">([[[</span> <span class="mf">0</span><span class="p">,</span>  <span class="mf">1</span><span class="p">,</span>  <span class="mf">2</span><span class="p">,</span>  <span class="mf">3</span><span class="p">,</span>  <span class="mf">4</span><span class="p">],</span>
+        <span class="p">[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">]],</span>
+
+       <span class="p">[[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">]],</span>
+
+       <span class="p">[[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">15</span><span class="p">,</span> <span class="mf">16</span><span class="p">,</span> <span class="mf">17</span><span class="p">,</span> <span class="mf">18</span><span class="p">,</span> <span class="mf">19</span><span class="p">]]])</span>
+</pre></div>
+<p>We now need to manipulate the array shape and
+strides.  The output shape must be <tt class="docutils literal"><span class="pre">(3,</span> <span class="pre">2,</span> <span class="pre">5)</span></tt>,
+i.e. 3 items, each containing two rows (<tt class="docutils literal"><span class="pre">m</span> <span class="pre">==</span>
+<span class="pre">2</span></tt>), and each row having 5 elements.</p>
+<p>The strides need to change from <tt class="docutils literal"><span class="pre">(20,</span> <span class="pre">4)</span></tt>, to
+<tt class="docutils literal"><span class="pre">(20,</span> <span class="pre">20,</span> <span class="pre">4)</span></tt>.  Each item in the new output
+array starts at a new row, that each row consists
+of 20 bytes (5 elements of 4 bytes each), and each
+element occupies 4 bytes (int32).</p>
+</div>
+<div class="slide" id="id20">
+<h1>Views and strided tricks</h1>
+<p>Let's do it:</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="k">from</span> <span class="nn">numpy.lib</span> <span class="k">import</span> <span class="n">stride_tricks</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">stride_tricks</span><span class="o">.</span><span class="n">as_strided</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">shape</span><span class="o">=</span><span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">5</span><span class="p">),</span>
+<span class="o">...</span>                             <span class="n">strides</span><span class="o">=</span><span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">20</span><span class="p">,</span> <span class="mf">4</span><span class="p">))</span>
+<span class="n">array</span><span class="p">([[[</span> <span class="mf">0</span><span class="p">,</span>  <span class="mf">1</span><span class="p">,</span>  <span class="mf">2</span><span class="p">,</span>  <span class="mf">3</span><span class="p">,</span>  <span class="mf">4</span><span class="p">],</span>
+        <span class="p">[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">]],</span>
+
+       <span class="p">[[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">]],</span>
+
+       <span class="p">[[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">15</span><span class="p">,</span> <span class="mf">16</span><span class="p">,</span> <span class="mf">17</span><span class="p">,</span> <span class="mf">18</span><span class="p">,</span> <span class="mf">19</span><span class="p">]]])</span>
+</pre></div>
+</div>
+<div class="slide" id="id21">
+<h1>Views and strided tricks</h1>
+<p>Or the old way (which is basically what
+<tt class="docutils literal"><span class="pre">as_strided</span></tt> does under the hood):</p>
+<div class="highlight"><pre><span class="o">&gt;&gt;&gt;</span> <span class="n">d</span> <span class="o">=</span> <span class="nb">dict</span><span class="p">(</span><span class="n">x</span><span class="o">.</span><span class="n">__array_interface__</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="p">[</span><span class="s">&#39;shape&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">3</span><span class="p">,</span> <span class="mf">2</span><span class="p">,</span> <span class="mf">5</span><span class="p">)</span>
+<span class="o">&gt;&gt;&gt;</span> <span class="n">d</span><span class="p">[</span><span class="s">&#39;strides&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="mf">20</span><span class="p">,</span> <span class="mf">20</span><span class="p">,</span> <span class="mf">4</span><span class="p">)</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="k">class</span> <span class="nc">Arr</span><span class="p">:</span>
+<span class="o">...</span>     <span class="n">__array_interface__</span> <span class="o">=</span> <span class="n">d</span>
+<span class="o">...</span>     <span class="n">base</span> <span class="o">=</span> <span class="n">x</span>
+
+<span class="o">&gt;&gt;&gt;</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">Arr</span><span class="p">())</span>
+<span class="n">array</span><span class="p">([[[</span> <span class="mf">0</span><span class="p">,</span>  <span class="mf">1</span><span class="p">,</span>  <span class="mf">2</span><span class="p">,</span>  <span class="mf">3</span><span class="p">,</span>  <span class="mf">4</span><span class="p">],</span>
+        <span class="p">[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">]],</span>
+
+       <span class="p">[[</span> <span class="mf">5</span><span class="p">,</span>  <span class="mf">6</span><span class="p">,</span>  <span class="mf">7</span><span class="p">,</span>  <span class="mf">8</span><span class="p">,</span>  <span class="mf">9</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">]],</span>
+
+       <span class="p">[[</span><span class="mf">10</span><span class="p">,</span> <span class="mf">11</span><span class="p">,</span> <span class="mf">12</span><span class="p">,</span> <span class="mf">13</span><span class="p">,</span> <span class="mf">14</span><span class="p">],</span>
+        <span class="p">[</span><span class="mf">15</span><span class="p">,</span> <span class="mf">16</span><span class="p">,</span> <span class="mf">17</span><span class="p">,</span> <span class="mf">18</span><span class="p">,</span> <span class="mf">19</span><span class="p">]]])</span>
+</pre></div>
+</div>
+<div class="slide" id="subclassing">
+<h1>Subclassing</h1>
+<p>Two important methods:</p>
+<dl class="docutils">
+<dt><span class="blue">__new__</span></dt>
+<dd>Allocated memory for ndarray object; only
+called when <em>new</em> array is created (i.e. not
+view).</dd>
+<dt><span class="blue">__array_finalize__</span></dt>
+<dd>Called to setup an array or view, whether or
+not __new__  was invoked.</dd>
+</dl>
+</div>
+<div class="slide" id="id22">
+<h1>Subclassing</h1>
+<div class="highlight"><pre><span class="k">class</span> <span class="nc">InfoArray</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">ndarray</span><span class="p">):</span>
+
+    <span class="k">def</span> <span class="nf">__new__</span><span class="p">(</span><span class="n">subtype</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">info</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="bp">None</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="bp">False</span><span class="p">):</span>
+        <span class="n">subarr</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">array</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="n">dtype</span><span class="o">=</span><span class="n">dtype</span><span class="p">,</span> <span class="n">copy</span><span class="o">=</span><span class="n">copy</span><span class="p">)</span>
+        <span class="n">subarr</span> <span class="o">=</span> <span class="n">subarr</span><span class="o">.</span><span class="n">view</span><span class="p">(</span><span class="n">subtype</span><span class="p">)</span>
+
+        <span class="k">if</span> <span class="n">info</span> <span class="ow">is</span> <span class="ow">not</span> <span class="bp">None</span><span class="p">:</span>
+            <span class="n">subarr</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="n">info</span>
+        <span class="k">elif</span> <span class="nb">hasattr</span><span class="p">(</span><span class="n">data</span><span class="p">,</span> <span class="s">&#39;info&#39;</span><span class="p">):</span>
+            <span class="n">subarr</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="n">data</span><span class="o">.</span><span class="n">info</span>
+
+        <span class="k">return</span> <span class="n">subarr</span>
+
+    <span class="k">def</span> <span class="nf">__array_finalize__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">obj</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">info</span> <span class="o">=</span> <span class="nb">getattr</span><span class="p">(</span><span class="n">obj</span><span class="p">,</span> <span class="s">&#39;info&#39;</span><span class="p">,</span> <span class="p">{})</span>
+</pre></div>
+</div>
+<div class="slide" id="in-conclusion">
+<h1>In conclusion</h1>
+<p>I would like to thank</p>
+<ul class="simple">
+<li><span class="blue">Enthought</span>, for generously sponsoring my
+visit, and for being one of the pillars of this community</li>
+<li>My study advisor, <span class="blue">Ben Herbst</span>, who
+doesn't ask too many questions when I disappear
+for a month</li>
+<li><span class="blue">You</span>, for taking the time to attend this talk</li>
+</ul>
+<!-- URL definitions -->
+</div>
+</div>
+</body>
+</html>

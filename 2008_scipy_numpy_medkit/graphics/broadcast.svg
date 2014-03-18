@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 13.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 14948)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
+<svg version="1.0" id="svg1800" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="48px" height="48px"
+	 viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+<radialGradient id="path3099_1_" cx="-135.7734" cy="-91.3477" r="9.6875" gradientTransform="matrix(2.1829 0 0 -0.7675 320.6691 -28.7304)" gradientUnits="userSpaceOnUse">
+	<stop  offset="0" style="stop-color:#000000"/>
+	<stop  offset="1" style="stop-color:#FFFFFF"/>
+</radialGradient>
+<path id="path3099" opacity="0.4091" fill="url(#path3099_1_)" enable-background="new    " d="M45.436,41.383
+	c0,4.105-9.469,7.436-21.147,7.436c-11.679,0-21.147-3.33-21.147-7.436c0-4.107,9.468-7.436,21.147-7.436
+	C35.967,33.947,45.436,37.275,45.436,41.383z"/>
+<path id="path1650" fill="#EDD400" stroke="#C4A000" stroke-width="0.9821" stroke-linecap="round" stroke-linejoin="round" d="
+	M45.088,21.404c0,11.482-9.308,20.79-20.79,20.79c-11.482,0-20.791-9.308-20.791-20.79s9.308-20.79,20.791-20.79
+	C35.78,0.614,45.088,9.922,45.088,21.404L45.088,21.404z"/>
+<path id="path3392" fill="none" stroke="#FCE94F" stroke-width="0.9821" stroke-linecap="round" stroke-linejoin="round" d="
+	M44.555,21.313c0,11.111-9.006,20.117-20.117,20.117c-11.111,0-20.118-9.006-20.118-20.117c0-11.111,9.007-20.118,20.118-20.118
+	C35.549,1.195,44.555,10.202,44.555,21.313L44.555,21.313z"/>
+<path id="path3068" fill="#FFFEFF" fill-opacity="0.2139" d="M43.676,20.477c0,10.831-6.052-4.306-18.674,0.387
+	C12.279,25.593,4.435,31.308,4.435,20.477c0-10.831,8.79-19.621,19.621-19.621C34.887,0.856,43.676,9.646,43.676,20.477z"/>
+<g>
+	<path fill="#FFFFFF" stroke="#FFFFFF" d="M34.609,10.5C44.568,23.328,33.871,32,33.871,32l-22.502-8.491L10.08,24.23
+		c-2.768-3.794,0.184-6.323,0.184-6.323l0.923,0.723L34.609,10.5z"/>
+	<path fill="#FFFFFF" stroke="#FFFFFF" d="M25.25,29c-5,4.25-7.25-3-7.25-3"/>
+</g>
+<path fill="none" stroke="#D3C400" stroke-width="0.5" d="M11.25,18.875c-0.325,0.511-0.392,4.164,0.125,4.438"/>
+<path fill="none" stroke="#D3C400" stroke-width="0.5" d="M33.667,31.25c0,0-3.5-8,0.75-20.083"/>
+<path fill="#FFF200" stroke="#D3C400" stroke-width="0.5" d="M18.834,26.833c0,0,2,4.251,5.583,2.084"/>
+</svg>

@@ -1,0 +1,359 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" width="434" height="435" id="svg2">
+  <defs id="defs4">
+    <linearGradient id="HalfTube">
+      <stop style="stop-color: white; stop-opacity: 1;" offset="0" id="stop27864"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="0.30000001" id="stop27866"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="1" id="stop27858"/>
+    </linearGradient>
+    <linearGradient id="TubeGradient">
+      <stop style="stop-color: white; stop-opacity: 1;" offset="0" id="stop22382"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="0.3037329" id="stop22384"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="0.69999999" id="stop22386"/>
+      <stop style="stop-color: white; stop-opacity: 1;" offset="1" id="stop22388"/>
+    </linearGradient>
+    <linearGradient id="linearGradient21483">
+      <stop style="stop-color: rgb(200, 200, 200); stop-opacity: 1;" offset="0" id="stop21485"/>
+      <stop style="stop-color: rgb(200, 200, 200); stop-opacity: 0;" offset="1" id="stop21487"/>
+    </linearGradient>
+    <linearGradient id="linearGradient18769">
+      <stop style="stop-color: white; stop-opacity: 1;" offset="0" id="stop18771"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="1" id="stop18773"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5509">
+      <stop style="stop-color: white; stop-opacity: 1;" offset="0" id="stop5511"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="1" id="stop5513"/>
+    </linearGradient>
+    <linearGradient id="linearGradient5475">
+      <stop style="stop-color: white; stop-opacity: 1;" offset="0" id="stop5477"/>
+      <stop style="stop-color: white; stop-opacity: 0;" offset="1" id="stop5479"/>
+    </linearGradient>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5481" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5515" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5552" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5554" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5586" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5588" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5606" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5608" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5624" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5626" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5651" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0288746, 0, 0, 2.78824, 235.378, -423.354)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5654" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0288746, 0, 0, 2.78824, 235.378, -427.997)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5662" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0288746, 0, 0, 2.78824, 235.378, -427.997)"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5664" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0288746, 0, 0, 2.78824, 235.378, -423.354)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient5724" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient5726" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14169" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14171" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14181" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14183" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14187" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0272593, 0, 0, 0.656844, 583.291, 81.4688)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14190" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0272593, 0, 0, 0.656844, 583.291, 81.4688)"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14194" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.785, 0)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14197" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.785, 0)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14203" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14205" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14208" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14211" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14223" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.785, 0)"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14225" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.785, 0)"/>
+    <linearGradient x1="359.64285" y1="252.71933" x2="359.64285" y2="245.93362" id="linearGradient14228" xlink:href="#linearGradient5509" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.769, 0)"/>
+    <linearGradient x1="424.40375" y1="225.04076" x2="424.40375" y2="233.25499" id="linearGradient14231" xlink:href="#linearGradient5475" gradientUnits="userSpaceOnUse" gradientTransform="matrix(0.0141339, 0, 0, 1, 582.785, 0)"/>
+    <linearGradient x1="388.25" y1="223.625" x2="388.25" y2="253.9734" id="linearGradient24182" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="662.32361" y1="232.125" x2="662.32361" y2="243.47012" id="linearGradient26849" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient28759" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient28763" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.4375" y1="229.61218" x2="636" y2="248.23718" id="linearGradient28783" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient30808" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient30810" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient31908" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient31910" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.67188" y1="245.61218" x2="639.09375" y2="232.64343" id="linearGradient31915" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="662.32361" y1="232.125" x2="662.32361" y2="243.47012" id="linearGradient31921" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.875346, 0, 29.731)"/>
+    <linearGradient x1="662.32361" y1="232.125" x2="662.32361" y2="243.47012" id="linearGradient47683" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.875346, 0, 29.731)"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient47685" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient47687" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.4375" y1="229.61218" x2="636" y2="248.23718" id="linearGradient47689" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.67188" y1="245.61218" x2="639.09375" y2="232.64343" id="linearGradient47691" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="662.32361" y1="232.125" x2="662.32361" y2="243.47012" id="linearGradient47729" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.875346, 0, 29.731)"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient47731" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient47733" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.4375" y1="229.61218" x2="636" y2="248.23718" id="linearGradient47735" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.67188" y1="245.61218" x2="639.09375" y2="232.64343" id="linearGradient47737" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="206.25" y1="236.11218" x2="206.25" y2="239.14789" id="linearGradient50152" xlink:href="#linearGradient18769" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="662.32361" y1="232.125" x2="662.32361" y2="243.47012" id="linearGradient50154" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.875346, 0, 29.731)"/>
+    <linearGradient x1="623.14203" y1="225.5629" x2="621.3125" y2="250.0629" id="linearGradient50156" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="623.14203" y1="249.9379" x2="621.6875" y2="225.9379" id="linearGradient50158" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.4375" y1="229.61218" x2="636" y2="248.23718" id="linearGradient50160" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="646.67188" y1="245.61218" x2="639.09375" y2="232.64343" id="linearGradient50162" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="248.92188" y1="199" x2="248.92188" y2="280.625" id="linearGradient50164" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.961715, -3.5, 9.11868)"/>
+    <linearGradient x1="388.25" y1="223.625" x2="388.25" y2="253.9734" id="linearGradient50166" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.87983, 0, 28.6233)"/>
+    <linearGradient x1="595.09375" y1="228.34375" x2="595.09375" y2="248.31801" id="linearGradient50168" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="264.6976" y1="221.46875" x2="264.6976" y2="256.28946" id="linearGradient50170" xlink:href="#TubeGradient" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1, 0, 0, 0.878128, 0, 29.3771)"/>
+    <linearGradient x1="284.14774" y1="224.4677" x2="268.14944" y2="244.31088" id="linearGradient50172" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+    <linearGradient x1="284.14774" y1="253.06079" x2="273.66531" y2="230.98116" id="linearGradient50174" xlink:href="#HalfTube" gradientUnits="userSpaceOnUse"/>
+  </defs>
+  <g id="layer1">
+    <g transform="matrix(0.70914, 0.705067, -0.705067, 0.70914, 64.0339, -268.273)" id="g49915">
+      <g id="g48024">
+        <g id="g19694">
+          <rect width="394.91171" height="17.5" rx="1.4285711" ry="1.4285715" x="190.80243" y="229.14789" style="fill: rgb(225, 225, 225); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect5740"/>
+          <rect width="394.91171" height="8.9285717" x="190.80243" y="230.21931" style="fill: url(#linearGradient50152) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect7512"/>
+          <rect width="394.91171" height="0.6785717" x="190.80243" y="244.96931" style="fill: black; fill-opacity: 0.0864197; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect17882"/>
+        </g>
+        <g transform="matrix(0.676487, 0, 0, 1.04274, 60.5212, -9.82449)" id="g10268">
+          <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.459115, 0, 0, 1.37615, -85.5989, -88.3712)" style="fill: white; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path9363"/>
+          <rect width="6.3317013" height="47.263622" x="185.50682" y="215.07281" style="fill: white; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect9361"/>
+          <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.391548, 0, 0, 1.37615, -50.5926, -88.3712)" style="fill: rgb(225, 225, 225); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path9359"/>
+        </g>
+        <g id="g14103">
+          <rect width="16.568336" height="23.257648" x="566.11414" y="227.31667" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect9320"/>
+          <g transform="matrix(0.676487, 0, 0, 0.642277, 437.794, 85.4765)" style="fill: black; fill-opacity: 1;" id="g13180">
+            <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.459115, 0, 0, 1.37615, -85.5989, -88.3712)" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path13182"/>
+            <rect width="6.3317013" height="47.263622" x="185.50682" y="215.07281" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect13184"/>
+            <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.391548, 0, 0, 1.37615, -50.5926, -88.3712)" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path13186"/>
+          </g>
+          <g transform="matrix(0.676487, 0, 0, 0.642277, 454.579, 85.4765)" style="fill: black; fill-opacity: 1;" id="g14095">
+            <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.459115, 0, 0, 1.37615, -85.5989, -88.3712)" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path14097"/>
+            <rect width="6.3317013" height="47.263622" x="185.50682" y="215.07281" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect14099"/>
+            <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.391548, 0, 0, 1.37615, -50.5926, -88.3712)" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path14101"/>
+          </g>
+        </g>
+      </g>
+      <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.770668, 0, 0, 2.91162e-05, 137.928, 256.52)" style="fill: rgb(94, 161, 197); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path9346"/>
+      <g id="g47956">
+        <g id="g47934">
+          <path d="M 599.28125,228.34375 L 599.28125,248.15625 L 638.125,248.15625 L 638.125,248.125 C 638.1455,248.13088 638.16678,248.15625 638.1875,248.15625 C 638.98848,248.15625 639.625,243.71694 639.625,238.25 C 639.625,232.78306 638.98848,228.34375 638.1875,228.34375 C 638.16678,228.34375 638.1455,228.36912 638.125,228.375 L 638.125,228.34375 L 599.28125,228.34375 z " style="fill: rgb(200, 200, 200); fill-opacity: 0.6; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect14287"/>
+          <g id="g47914">
+            <g id="g47530">
+              <path d="M 681.9375,237.02232 L 681.9375,238.02232 L 743.875,238.02232 L 734.55955,237.02232 L 681.9375,237.02232 z " style="fill: black; fill-opacity: 1; fill-rule: evenodd; stroke: none; stroke-width: 1px; stroke-linecap: butt; stroke-linejoin: miter; stroke-opacity: 1;" id="path2788"/>
+              <path d="M 651.76501,233.25 C 651.11268,233.37308 650.60878,235.3273 650.60876,237.6875 C 650.60876,240.0477 651.1127,241.96731 651.76501,242.0904 L 677.21875,242.09375 L 681.96875,238.03125 L 681.96875,237.03125 L 677.21875,233.25 L 651.76501,233.25 z " style="fill: rgb(225, 225, 225); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="rect16973"/>
+            </g>
+            <g id="g47908">
+              <path d="M 641.8125,226.9375 L 650,232.125 L 673.125,232.125 L 673.125,229.1875 C 673.125,227.941 672.12151,226.9375 670.875,226.9375 L 641.8125,226.9375 z M 673.125,243.375 L 650,243.46875 L 641.90625,248.90625 L 670.875,248.90625 C 672.1215,248.90625 673.12501,247.90275 673.125,246.65625 L 673.125,243.375 z " style="opacity: 0.5; fill: rgb(111, 189, 229); fill-opacity: 0.895062; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="rect44669"/>
+              <g id="g47904">
+                <path d="M 599.65625,220.34375 L 599.65625,255.25 L 603.6875,255.25 L 603.84375,255.25 L 603.84375,255.09375 C 604.11895,254.66943 604.39056,253.22407 604.59375,251.15625 L 641.59375,249.125 L 650,243.46875 L 677.09375,243.38166 L 677.09375,232.125 L 650,232.125 L 641.8125,226.9375 L 604.53125,223.96875 C 604.3363,222.14978 604.09898,220.88745 603.84375,220.5 L 603.84375,220.34375 L 603.6875,220.34375 L 599.65625,220.34375 z " style="fill: rgb(94, 161, 197); fill-opacity: 0.808642; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="rect9338"/>
+                <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.25981, 0, 0, 1.01586, 442.992, -3.64307)" style="fill: rgb(60, 129, 167); fill-opacity: 0.705882; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path10319"/>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="g31931">
+          <path d="M 650,242.85019 L 677.09375,242.85133 L 677.09375,232.9205 L 649.96247,232.9205 L 650,242.85019 z " style="opacity: 0.3; fill: url(#linearGradient50154) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="path25956"/>
+          <g id="g31887">
+            <path d="M 604.59375,251.15625 L 641.59375,249.125 L 641.8125,227.82138 L 604.53125,224.85263 C 604.51949,224.96817 604.37026,251.3254 604.59375,251.15625 z " style="opacity: 0.3; fill: url(#linearGradient50156) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="path27852"/>
+            <path d="M 604.59375,250.09559 L 641.59375,248.06434 L 641.8125,228.35171 L 604.53125,225.38296 C 604.51949,225.4985 604.37026,250.26474 604.59375,250.09559 z " style="opacity: 0.3; fill: url(#linearGradient50158) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="path28761"/>
+          </g>
+          <g id="g31923">
+            <path d="M 641.59375,249.125 L 650,243.46875 L 649.96875,233.05844 L 641.8125,227.77719 L 641.59375,249.125 z " style="opacity: 0.3; fill: url(#linearGradient50160) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="path28775"/>
+            <path d="M 641.57165,248.06434 L 649.9779,242.80584 L 649.92456,233.01424 L 641.76831,227.73299 L 641.57165,248.06434 z " style="opacity: 0.3; fill: url(#linearGradient50162) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-opacity: 1;" id="path29670"/>
+          </g>
+        </g>
+      </g>
+      <g id="g48088">
+        <path d="M 249.625,221.40625 C 249.625,221.40625 249.625,227.99927 249.625,238.75 C 249.625,252.625 249.625,256.21875 249.625,256.21875 L 283.75,256.28125 L 284.5455,253.96875 L 586.71875,253.96875 L 591.09375,248.3125 L 599.28125,248.28125 C 599.28125,248.28125 600.03125,245.23437 600.03125,238.5 C 600.03125,230.5 599.28125,228.34375 599.28125,228.34375 L 591.09375,228.34375 L 586.78125,223.625 L 284.5455,223.625 L 283.75,221.46875 L 249.625,221.40625 z " style="fill: rgb(200, 200, 200); fill-opacity: 0.598765; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect5546"/>
+        <g id="g48084">
+          <path d="M 242.34375,199 L 242.34375,199.125 C 241.70763,200.81519 241.21875,218.39832 241.21875,239.8125 C 241.21875,261.34807 241.7025,278.98179 242.34375,280.5 L 242.34375,280.625 L 242.4375,280.625 L 248.21875,280.625 C 248.99845,279.94031 249.625,261.91022 249.625,239.8125 C 249.625,217.77435 249.28541,199 248.1875,199 L 242.4375,199 L 242.34375,199 z " style="fill: rgb(200, 200, 200); fill-opacity: 0.771605; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path31865"/>
+          <path d="M 608.3644 237.67415 A 4.6719556 17.172594 0 1 1  599.02049,237.67415 A 4.6719556 17.172594 0 1 1  608.3644 237.67415 z" transform="matrix(0.264877, 0, 0, 2.37687, 82.5416, -325.113)" style="fill: black; fill-opacity: 0.179012; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path31869"/>
+        </g>
+      </g>
+      <g id="g49756">
+        <g id="g49258">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect48306"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49202"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49204"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49206"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49208"/>
+        </g>
+        <g transform="translate(-10)" id="g49265">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49267"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49269"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49271"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49273"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49275"/>
+        </g>
+        <g transform="translate(-20)" id="g49289">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49291"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49293"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49295"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49297"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49299"/>
+        </g>
+        <g transform="translate(-30)" id="g49301">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49303"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49305"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49307"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49309"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49311"/>
+        </g>
+        <g transform="translate(-40)" id="g49313">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49315"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49317"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49319"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49321"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49323"/>
+        </g>
+        <g transform="translate(-50)" id="g49325">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49327"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49329"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49331"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49333"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49335"/>
+        </g>
+        <g transform="translate(-60)" id="g49337">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49339"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49341"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49343"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49345"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49347"/>
+        </g>
+        <g transform="translate(-70)" id="g49349">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49351"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49353"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49355"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49357"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49359"/>
+        </g>
+        <g transform="translate(-80)" id="g49361">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49363"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49365"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49367"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49369"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49371"/>
+        </g>
+        <g transform="translate(-90)" id="g49373">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49375"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49377"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49379"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49381"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49383"/>
+        </g>
+        <g transform="translate(-100)" id="g49385">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49387"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49389"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49391"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49393"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49395"/>
+        </g>
+        <g transform="translate(-110)" id="g49397">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49399"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49401"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49403"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49405"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49407"/>
+        </g>
+        <g transform="translate(-120)" id="g49409">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49411"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49413"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49415"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49417"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49419"/>
+        </g>
+        <g transform="translate(-130)" id="g49421">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49423"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49425"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49427"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49429"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49431"/>
+        </g>
+        <g transform="translate(-140)" id="g49433">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49435"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49437"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49439"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49441"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49443"/>
+        </g>
+        <g transform="translate(-150)" id="g49445">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49447"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49449"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49451"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49453"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49455"/>
+        </g>
+        <g transform="translate(-160)" id="g49457">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49459"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49461"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49463"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49465"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49467"/>
+        </g>
+        <g transform="translate(-170)" id="g49469">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49471"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49473"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49475"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49477"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49479"/>
+        </g>
+        <g transform="translate(-180)" id="g49481">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49483"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49485"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49487"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49489"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49491"/>
+        </g>
+        <g transform="translate(-190)" id="g49493">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49495"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49497"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49499"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49501"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49503"/>
+        </g>
+        <g transform="translate(-200)" id="g49505">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49507"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49509"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49511"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49513"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49515"/>
+        </g>
+        <g transform="translate(-210)" id="g49517">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49519"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49521"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49523"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49525"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49527"/>
+        </g>
+        <g transform="translate(-220)" id="g49529">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49531"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49533"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49535"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49537"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49539"/>
+        </g>
+        <g transform="translate(-230)" id="g49541">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49543"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49545"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49547"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49549"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49551"/>
+        </g>
+        <g transform="translate(-240)" id="g49553">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49555"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49557"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49559"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49561"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49563"/>
+        </g>
+        <g transform="translate(-250)" id="g49565">
+          <rect width="0.5" height="7" x="585" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49567"/>
+          <rect width="0.5" height="5" x="583" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49569"/>
+          <rect width="0.5" height="5" x="581" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49571"/>
+          <rect width="0.5" height="5" x="579" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49573"/>
+          <rect width="0.5" height="5" x="577" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49575"/>
+        </g>
+        <rect width="0.5" height="7" x="325" y="229.36218" style="fill: black; fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="rect49579"/>
+      </g>
+      <g id="g49193">
+        <path d="M 242.76359,200.52077 C 243.19919,202.23096 243.50513,219.65535 243.51685,239.75 C 243.52857,259.84465 243.36371,276.18991 242.79105,279 L 248.48392,279 C 249.08684,273.30338 249.625,261.00172 249.625,239.75 C 249.625,218.55558 249.15283,202.09099 248.58525,200.5 L 242.76359,200.52077 z " style="fill: url(#linearGradient50164) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path40114"/>
+        <path d="M 284.5234,225.33081 L 284.5234,252.02811 L 586.71875,252.0723 L 591.09375,247.09577 L 591.09375,229.52669 L 586.78125,225.375 L 284.5234,225.33081 z " style="fill: url(#linearGradient50166) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path23289"/>
+        <path d="M 591.09375,247.09716 L 599.50222,247.06591 C 599.50222,247.06591 600.03125,245.23437 600.03125,238.5 C 600.03125,230.5 599.48012,229.52118 599.48012,229.52118 L 591.09375,229.52118 L 591.09375,247.09716 z " style="fill: url(#linearGradient50168) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path32064"/>
+        <path d="M 249.5625,223.18128 C 249.5625,223.18128 249.75,233.92818 249.75,238.80318 C 249.75,243.74068 249.5625,254.42509 249.5625,254.42509 L 283.75,254.42509 L 283.75,223.18128 L 249.5625,223.18128 z " style="fill: url(#linearGradient50170) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path32959"/>
+        <g id="g34753">
+          <path d="M 283.75,256.28125 L 284.5455,253.96875 L 284.5455,225.30438 L 283.75,223.14813 L 283.75,256.28125 z " style="fill: url(#linearGradient50172) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path32961"/>
+          <path d="M 283.75,254.3809 L 284.5455,252.0684 L 284.5455,225.39277 L 283.75,223.23652 L 283.75,254.3809 z " style="fill: url(#linearGradient50174) rgb(0, 0, 0); fill-opacity: 1; fill-rule: nonzero; stroke: none; stroke-width: 5; stroke-linecap: round; stroke-linejoin: miter; stroke-miterlimit: 4; stroke-dasharray: none; stroke-opacity: 1;" id="path34749"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
