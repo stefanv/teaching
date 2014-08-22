@@ -1310,7 +1310,7 @@ colorbox{pink}{double[:, ::1] arr}`):
 
 \begin_layout Plain Layout
 
-    cdef size_t i, j
+    cdef Py_ssize_t i, j
 \end_layout
 
 \begin_layout Plain Layout
@@ -1402,7 +1402,7 @@ colorbox{pink}{cnp.ndarray[cnp.float64, ndim=2] arr}`):
 
 \begin_layout Plain Layout
 
-    cdef size_t i, j
+    cdef Py_ssize_t i, j
 \end_layout
 
 \begin_layout Plain Layout
