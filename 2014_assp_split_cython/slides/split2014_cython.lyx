@@ -603,6 +603,10 @@ Compile generated code
 \end_layout
 
 \begin_layout Standard
+By hand you would do (but don't do this):
+\end_layout
+
+\begin_layout Standard
 \begin_inset listings
 lstparams "language=bash"
 inline false
@@ -615,7 +619,7 @@ $ gcc -O2 -fPIC -I/usr/include/python2.7
 
 \begin_layout Plain Layout
 
-  -c integrate.c -o integrate_compiled.o 
+  -c integrate.c -o integrate_compiled.so
 \end_layout
 
 \end_inset
@@ -624,10 +628,17 @@ $ gcc -O2 -fPIC -I/usr/include/python2.7
 \end_layout
 
 \begin_layout Standard
-Easier yet, construct 
+
+\series bold
+Easier yet
+\series default
+, construct 
 \family typewriter
-setup.py
+a
+\series bold
+ setup.py
 \family default
+\series default
 :
 \end_layout
 
@@ -689,8 +700,11 @@ setup(
 \begin_layout Standard
 Run using 
 \family typewriter
-python setup.py build_ext -i.
- This means: build extensions 
+\series bold
+python setup.py build_ext -i
+\series default
+.
+ This means: build the extensions 
 \begin_inset Quotes fld
 \end_inset
 
@@ -1390,12 +1404,16 @@ import numpy as np
 
 def foo(`
 \backslash
-colorbox{pink}{cnp.ndarray[cnp.float64, ndim=2] arr}`):
+colorbox{pink}{cnp.ndarray[cnp.float64
+\backslash
+_t, ndim=2] arr}`):
 \end_layout
 
 \begin_layout Plain Layout
 
-    cdef cnp.ndarray[cnp.float64, ndim=2] out = 
+    cdef cnp.ndarray[cnp.float64
+\backslash
+_t, ndim=2] out = 
 \backslash
 
 \end_layout

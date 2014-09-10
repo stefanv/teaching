@@ -34,6 +34,10 @@ B = np.random.random((P, Q))
 out = np.zeros((M, Q))
 expected = np.dot(A, B)
 
+## with take_time('Python Dot'):
+##     prange_demo.python_dot(A, B, out)
+##     np.testing.assert_allclose(out, expected)
+
 with take_time('Cython Dot'):
     prange_demo.dot(A, B, out)
     np.testing.assert_allclose(out, expected)

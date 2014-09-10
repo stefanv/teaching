@@ -1,7 +1,7 @@
 .. -*- rst -*-
 
 ======================
-Problem-set: Kiel 2012
+Cython Problem-set
 ======================
 
 .. contents::
