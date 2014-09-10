@@ -1,7 +1,6 @@
 *~
-
+*.profile
 *.py[co]
 .*
 \#*
-
-
+build
