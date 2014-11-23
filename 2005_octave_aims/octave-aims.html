@@ -1,0 +1,65 @@
+<html>
+<head><meta HTTP-EQUIV=CONTENT-TYPE CONTENT="text/html; charset=utf-8">
+<title>Title</title>
+<script language="JavaScript">
+<!--
+var nCurrentPage = 0;
+var nPageCount = 32;
+
+function NavigateAbs( nPage )
+{
+  frames["show"].location.href = "img" + nPage + ".html";
+  //frames["notes"].location.href = "note" + nPage + ".html";
+  nCurrentPage = nPage;
+  if(nCurrentPage==0)
+  {
+    frames["navbar1"].location.href = "navbar0.html";
+  }
+  else if(nCurrentPage==nPageCount-1)
+  {
+    frames["navbar1"].location.href = "navbar2.html";
+  }
+  else
+  {
+    frames["navbar1"].location.href = "navbar1.html";
+  }
+}
+
+function NavigateRel( nDelta )
+{
+  var nPage = parseInt(nCurrentPage) + parseInt(nDelta);
+  if( (nPage >= 0) && (nPage < nPageCount) )
+  {
+    NavigateAbs( nPage );
+  }
+}
+
+function ExpandOutline()
+{
+  frames["navbar2"].location.href = "navbar4.html";
+  frames["outline"].location.href = "outline1.html";
+}
+
+function CollapseOutline()
+{
+  frames["navbar2"].location.href = "navbar3.html";
+  frames["outline"].location.href = "outline0.html";
+}
+
+// -->
+</SCRIPT>
+</head>
+<frameset cols="*,656">
+  <frameset rows="42,*">
+    <frame src="navbar3.html" name="navbar2" marginwidth=4 marginheight=4 scrolling=no>
+    <frame src="outline0.html" name="outline">
+  </frameset>
+  <frameset rows="42,*">
+    <frame src="navbar0.html" name="navbar1" marginwidth=4 marginheight=4 scrolling=no>
+    <frame src="img0.html" name="show" marginwidth=4 marginheight=4>
+  </frameset>
+</frameset>
+<noframes><body text=#000000 bgcolor=#FFFFFF link=#0000CC vlink=#000080 alink=#0000CC>
+Unfortunately your browser does not support floating frames.
+</noframes></body>
+</html>
