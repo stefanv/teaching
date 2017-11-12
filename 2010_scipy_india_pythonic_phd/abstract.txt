@@ -1,0 +1,11 @@
+In May of 2005, I started a pilgrimage to transform myself into a
+doctor of engineering. Little did I know, then, that my journey would
+bring me in touch with some of the most creative, vibrant and
+inspiring minds in the open source world, and that an opportunity
+would arise to help realise their (and now my) dream: a completely
+free and open environment for performing cutting edge science. In this
+talk, I take you on my journey, and along the way introduce the NumPy
+and SciPy projects, our community, the early days of packaging, our
+documentation project, the publication of conference proceedings as
+well as work-shops and sprints around the world. I may even tell you a
+bit about my PhD on super-resolution imaging!
