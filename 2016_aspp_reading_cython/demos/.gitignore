@@ -1,0 +1,9 @@
+*.so
+**/__pycache__
+**/build
+*.pyc
+
+integrate/integrate.c
+integrate/integrate_any.c
+integrate/integrate_cy.c
+integrate/integrate_types.c
