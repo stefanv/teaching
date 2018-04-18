@@ -1,0 +1,3 @@
+python -m cProfile -o sometask.profile sometask.py
+pyprof2calltree -i sometask.profile -o callgrind.log
+kcachegrind callgrind.log

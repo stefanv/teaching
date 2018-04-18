@@ -1,0 +1,173 @@
+.. -*- rst -*-
+
+======================
+Cython Problem-set
+======================
+
+.. contents::
+   :local:
+
+.. |space| unicode:: U+0020
+
+Please feel free to explore beyond the problems given, and ask
+questions at any time.
+
+.. Some exercises borrowed from Pauli Virtanen's 2011 lecture
+
+Cythonizing
+-----------
+
+**Description**: In this exercise, you will practice implementing a simple
+expression in Cython, and applying it to a numpy array.
+
+**Assignment**: Implement a function in Cython that computes ``x**3 - 4x + 2``
+on each element of a large floating point array.  Is this function faster than
+NumPy by default?  If so, can you explain why?
+
+You will need to create two files: ``setup.py`` and
+``fast_poly.pyx``.
+
+Use the following for ``setup.py``::
+
+  from distutils.core import setup
+  from distutils.extension import Extension
+  from Cython.Distutils import build_ext
+
+  setup(
+    cmdclass = {'build_ext': build_ext},
+    ext_modules = [
+      Extension("fast_poly", ["fast_poly.pyx"]),
+    ]
+  )
+
+And for ``fast_poly.pyx``::
+
+  import numpy as np
+
+  def my_poly(...):
+
+      ...
+
+      return np.asarray(out)
+
+You need to call ``np.asarray`` on your output, otherwise a Cython
+MemoryView object is returned instead of a NumPy array.
+
+Benchmarking the NumPy version in IPython or Jupyter::
+
+  import numpy as np
+  x = np.linspace(0, 1, 10000)
+  %timeit x**3 - 4*x + 2
+
+For your Cython version, do the same, after importing::
+
+  from fast_poly import my_poly
+
+Wrapping C
+----------
+
+**Description**: In this exercise, you will wrap an existing C library
+(provided) in Cython, so that it may be accessed from Python.  (You
+may also use Numba, if you prefer.)
+
+**Assignment**: In the ``wrapping`` directory is a simple C library
+that performs some operation on a Numpy array. The header
+``src/stuff.h`` defines the function with signature::
+
+    void compute(int n, double *input, double *output)
+
+which takes two C arrays of doubles, each of length ``n``.  This is a
+pretty typical C function signature, like one you may run into in the
+real world.
+
+Now, write a Cython wrapper::
+
+    def do_compute(double[:] input_array):
+        ...
+        return np.asarray(output_array)
+
+for this function, to expose it to Python.
+
+The C function `compute` requires pointers to the array data, which
+can be found using ``&input_array[0]`` (or ``&input_array[0, 0]`` in
+the case of a 2D array).  The ``&`` means "address of", and gives a
+``double *``, ready for use in C.
+
+The behaviour of the function can be verified by running ``run.py``
+(open it up to see what it does).
+
+Conway's Game of Life
+---------------------
+
+.. topics: Numpy interface, general Numpy usage
+
+**Description**:  In this exercise, you will practice manipulating
+two-dimensional arrays in-place.
+
+**Assignment**: The Game of Life is a well-known cellular automaton that
+exhibits interesting behavior. It is defined on a grid of cells, where each
+cell has 8 neighbors::
+
+   .........
+   .........
+   ...ooo...
+   ...oxo...
+   ...ooo...
+   .........
+   .........
+
+Each cell is either alive or dead, and at any point in time this is
+know as the "state" of the game.  The update rule used to evolve to
+the next state is:
+
+- Cells with with fewer than 2 or more than 3 live neighbors die.
+- A live cell with two or three live neighbors lives on to the next
+  generation.
+- A dead cell with exactly 3 live neighbors becomes alive.
+
+Write a Cython function ``life_update(old_state, new_state)`` in
+``life.pyx`` that takes an `N x N` Numpy array `old_state` of type
+``int``, and writes the new state to `new_state`. Use four nested
+for-loops, and remember to add type declarations for the counters.
+
+We've provided a script ``run_life.py`` that will execute the game
+based on your update definition.
+
+**Notes**: You can modify the starting state of the game by reading in
+other initial states:
+
+- ``glider.png``: the glider
+
+- ``glider_gun.png``: the Gosper glider gun
+
+- ``breeder.png``: one sort of a breeder
+
+- ... and others!
+
+These examples come from the Game of Life simulator
+`Golly <http://golly.sf.net/>`__.
+
+L-Systems
+---------
+
+**Description**: In this exercise, you will practice accelerating operations
+on Python structures, such as lists and dictionaries.
+
+**Assignment**: Implement an `L-system
+<http://en.wikipedia.org/wiki/L-system>`__ in Cython.  Try, for example, to
+build a Sierpinski Triangle or the Dragon Curve.  If you want, you can first
+implement it in pure Python, and then add the type information later.
+
+Hints
+`````
+
+ - Use your Cython program to generate coordinates, then simply "connect the
+   dots" using ``matplotlib`` (``import matplotlib.pyplot as plt;
+   plt.plot(...)``).
+
+ - Cython can accelerate operations on non-numerical types too.  For example,
+   if you store your coordinates in a list, you can use::
+
+     cdef list L = []
+
+   For dictionaries, the type is ``dict``.

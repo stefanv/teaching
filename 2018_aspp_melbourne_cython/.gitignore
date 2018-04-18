@@ -1,0 +1,6 @@
+*~
+*.profile
+*.py[co]
+**/.ipynb_checkpoints
+\#*
+build
